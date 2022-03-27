@@ -11,5 +11,6 @@ authors: 'Junchao Wu*, Ying Jiang, Xin Chen, Lingyu Guo, Xiaotong Wei and Xiaoya
 citation: 'J. Wu, Y. Jiang, X. Chen, L. Guo, X. Wei and X. Yang, ""The Canton Canon" Digital Library Based on Knowledge Graph - Taking the Revolutionary Archives of Canton in the Republic of China as an Example," 2021 10th International Conference on Educational and Information Technology (ICEIT), 2021, pp. 171-179, doi: 10.1109/ICEIT51700.2021.9375538.'
 paper: 'https://doi.org/10.1109/ICEIT51700.2021.9375538'
 code: 'https://github.com/junchaoIU/CRHE-KG_DEV1.0_React'
+award: 'Best Presentation Award'
 show_year: true
 ---
