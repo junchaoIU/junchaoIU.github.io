@@ -27,6 +27,7 @@ Publications
 
 {% endfor %}
 
+<br/>
 
 Research Project
 ======
