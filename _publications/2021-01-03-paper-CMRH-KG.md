@@ -1,0 +1,15 @@
+---
+title: '"The Canton Canon" Digital Library Based on Knowledge Graph - Taking the Revolutionary Archives of Canton in the Republic of China as an Example'
+collection: publications
+status: published
+permalink: /publication/2021-01-03-general
+excerpt: ''
+date: 2021-01-03
+venue: 'ICEIT'
+paperurl: ''
+authors: 'Junchao Wu*, Ying Jiang, Xin Chen, Lingyu Guo, Xiaotong Wei and Xiaoyan Yang'
+citation: 'J. Wu, Y. Jiang, X. Chen, L. Guo, X. Wei and X. Yang, ""The Canton Canon" Digital Library Based on Knowledge Graph - Taking the Revolutionary Archives of Canton in the Republic of China as an Example," 2021 10th International Conference on Educational and Information Technology (ICEIT), 2021, pp. 171-179, doi: 10.1109/ICEIT51700.2021.9375538.'
+paper: 'https://doi.org/10.1109/ICEIT51700.2021.9375538'
+code: 'https://github.com/junchaoIU/CRHE-KG_DEV1.0_React'
+show_year: true
+---

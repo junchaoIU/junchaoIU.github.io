@@ -16,17 +16,17 @@ News
 - [AutoProtégé](https://github.com/junchaoIU/AutoProtege) V2.0  has published in Github!
 
 
-[//]: # (Publications)
+Publications
 
-[//]: # (======)
+======
 
-[//]: # ({% include base_path %})
+{% include base_path %}
 
-[//]: # ({% for post in site.publications reversed %})
+{% for post in site.publications reversed %}
 
-[//]: # (  {% include archive-single-publications.html %})
+  {% include archive-single-publications.html %}
 
-[//]: # ({% endfor %})
+{% endfor %}
 
 
 Awards
