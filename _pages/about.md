@@ -17,7 +17,6 @@ News
 
 
 Publications
-
 ======
 
 {% include base_path %}

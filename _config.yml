@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "WU Junchao"
+  name             : "Junchao Wu"
   avatar           : "profile.png"
   bio              : "Undergraduate Student"
   location         : "Zhuhai, China"
@@ -108,7 +108,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+#  twitter          : "replacethistwitterhandle"
   vine             :
   weibo            :
   xing             :
