@@ -28,6 +28,15 @@ Publications
 {% endfor %}
 
 
+Research Project
+======
+* **Construction of a digital library for the history of modern China's revolution based on knowledge graph** : Worked as Project Manager -- *May 2019 - March 2021*
+
+* **Research and Application of Digitalization of Long March Red Cultural Resources Based on Knowledge Graph** : Worked as Backend Engineer -- *May 2020 - Present*
+ 
+* **Research on text mining and cultural phenomenon based on bullet screen corpus** : Worked as Data Mining & Algorithm Engineer -- *May 2020 - Present*
+
+
 Awards
 ======
 - National Second Prize & Guangdong First Prize in the 7th Teddy Cup Data Mining Challenge (Title: Analysis of Safe Driving Behavior of Transport Vehicles), 2019
