@@ -34,7 +34,8 @@ Education
   * Presided over the design of ontology database and knowledge storage structure, knowledge extraction and crawler, knowledge reasoning completion scheme design (ontology research, knowledge engineering)
   * Design and development of the Python operation library AutoProtégé for the ontology editing tool Protégé (https://github.com/junchaoIU/AutoProtege)
   * Responsible for the front-end development and back-end development of the system, has been deployed and launched (https://gzknowledge.cn) and registered the computer software copyright certificate: China Modern Revolution History Knowledge Graph System V1.0 (the first copyright holder) (Technology stack: React, SpringBoot, Jena)
-  * Completed the design and application of the information double-layer retrieval model and the spatiotemporal knowledge model. The paper "The Canton Canon" Digital Library Based on Knowledge Graph - Taking the Revolutionary Archives of Canton in the Republic of China as an Example was published in **IEEE 10th International Conference on Educational and Information Technology (ICEIT)**, was invited to present at the conference to give a report and won the Best Oral Presentation Award of the conference (First author, EI)
+  * Completed the design and application of the information double-layer retrieval model. The paper "The Canton Canon" Digital Library Based on Knowledge Graph - Taking the Revolutionary Archives of Canton in the Republic of China as an Example was published in **IEEE 10th International Conference on Educational and Information Technology (ICEIT)**, was invited to present at the conference to give a report and won the Best Oral Presentation Award of the conference (First author, EI)
+  * Completed the design and application of the spatiotemporal knowledge model.The paper "Research and application of digitization of Chinese modern revolutionary historical document resources based on spatio-temporal evolution knowledge graph" was under review by the chinese core journal **Digital Library Forum** (CSSCI). 
 
 * **Research and Application of Digitalization of Long March Red Cultural Resources Based on Knowledge Graph** : Worked as Backend Engineer -- *May 2020 - Present*
   * Responsible for App back-end technology selection, design and development (technology stack: Flask, Neo4j)
@@ -45,8 +46,8 @@ Education
 * **Research on text mining and cultural phenomenon based on bullet screen corpus** : Worked as Data Mining & Algorithm Engineer -- *May 2020 - Present*
   * Participate in data engineering such as barrage crawler, data cleaning and storage; project database barrage data volume reaches 50 million (Python crawler and text preprocessing)
   * Responsible for text mining and text classification research of bullet screen corpus, including sentiment analysis and text position detection (using rules, statistical machine learning and deep learning methods)
-  * Conducted research on new word discovery algorithms in the field of barrage corpus. The paper "Multi-feature fusion new word discovery model for barrage" was under review by the chinese core journal "Computer Application Research". 
-  * Conducted research on the construction and application of subculture barrage corpus, and the paper "Construction and Analysis of Subculture Barrage Corpus" has been accepted by journal "Information Research"
+  * Conducted research on new word discovery algorithms in the field of barrage corpus. The paper "Multi-feature fusion new word discovery model for barrage" was under review by the chinese core journal **Computer Application Research**. 
+  * Conducted research on the construction and application of subculture barrage corpus, and the paper "Construction and Analysis of Subculture Barrage Corpus" has been accepted by journal **Information Research**
   
 
 ## Publications
