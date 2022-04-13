@@ -4,7 +4,7 @@ collection: publications
 status: published
 permalink: /publication/2022-03-29-general
 excerpt: ''
-date: 2022.03.29
+date: 2022-03-29
 venue: 'Preprint'
 paperurl: ''
 authors: 'Lingyu Guo*, Junchao Wu, Xin Chen, Ying Jiang and Zhizhu Geng'
