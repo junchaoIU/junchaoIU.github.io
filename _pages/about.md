@@ -12,8 +12,9 @@ I am [WU Junchao](https://junchaoiu.github.io) (吴俊潮). Currently, I am an u
 
 News
 ======
-- One paper accepted in **Information Research**. -2022-03-30
-- One paper accepted in **Electronic Technology & Software Engineering**. -2022-03-29
+- One paper accepted in **计算机应用研究（Application Research of Computer）**. -2022-04-11
+- One paper accepted in **情报探索（Information Research）**. -2022-03-30
+- One paper accepted in **电子技术与软件工程（Electronic Technology & Software Engineering）**. -2022-03-29
 - We open source [AutoProtégé](https://github.com/junchaoIU/AutoProtege) V2.0 in Github! -2022-02-15
 
 
