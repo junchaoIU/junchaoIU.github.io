@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
-You can download my [CV](../files/WU_Junchao_CV_ZH.pdf) in PDF.
+You can download my [CV_Chinese version](../files/WU_Junchao_CV_ZH.pdf) and [CV_English version](../files/WU_Junchao_CV_EN.pdf) in PDF.
 
 Education
 ======
