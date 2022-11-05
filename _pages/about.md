@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "WU Junchao"
+title: "WU JUNCHAO"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,14 +8,14 @@ redirect_from:
   - /about.html
 ---
 
-I am [WU Junchao](https://junchaoiu.github.io) (吴俊潮). Currently, I am an M.S. Student at Data Science - Computational Lingustics, [University of Macao](https://www.um.edu.mo/), fortunately advised by [Prof. Derek F. Wong](https://www.fst.um.edu.mo/personal/derek-wong/). Previously,I am an undergraduate student at Department of Information Managemnt and Information System, [Beijing Normal University, Zhuhai](https://english.bnuz.edu.cn/), supervised by [Prof. JiangYing](https://rsgyy.bnu.edu.cn/yjjg/glcxyjzx/glcxyjzxrcdw/97671.html) and [Prof. Yangjing](https://rsgyy.bnu.edu.cn/yjjg/yykxyjzx/rcdw2/97903.html). 
+I am [WU JUNCHAO](https://junchaoiu.github.io) (吴俊潮). Currently, I am an M.S. Student at Data Science - Computational Lingustics, [University of Macao](https://www.um.edu.mo/), fortunately advised by [Prof. Derek F. Wong](https://www.fst.um.edu.mo/personal/derek-wong/). Previously,I am an undergraduate student at [Beijing Normal University, Zhuhai](https://english.bnuz.edu.cn/), supervised by [Prof. JiangYing](https://rsgyy.bnu.edu.cn/yjjg/glcxyjzx/glcxyjzxrcdw/97671.html) and [Prof. Yangjing](https://rsgyy.bnu.edu.cn/yjjg/yykxyjzx/rcdw2/97903.html). 
 My current research interests are Natural Language Processing, Machine Translation and Knowledge Graphs. Please feel free to contact me via email!
 
 Research Interests
 ======
-Machine Translation: Unsupervised Machine Translation, Low-resource Translation
-Knowledge Graphs: Automatic Construction of Domain Knowledge Graph, Spatiotemporal Knowledge Graph and Ontology
-Data Mining: Public Opinion Analysis, New Word Discover
+- Machine Translation: Unsupervised Machine Translation, Low-resource Translation
+- Knowledge Graphs: Automatic Construction of Domain Knowledge Graph, Spatiotemporal Knowledge Graph and Ontology
+- Data Mining: Public Opinion Analysis, New Word Discover
 
 News
 ======
@@ -62,3 +62,8 @@ Professional skills
 * Frameworks: SpringBoot, ReactJS, Scikit-learn, SpaCy, TensorFlow, Keras, Flask 
 * Other Tools: WebLogic, Ant, Neo4j, MySQL, Oracle, Jena, Git 
 * Soft Skills: Leadership, Event Management, Writing, Public Speaking, Time Management
+
+Others
+======
+- If you are also interested in machine translation, you can follow my senior fellow apprentice and Lab: [Zhan Runzhe](https://runzhe.me/) and [NLP2CT LAB](http://nlp2ct.cis.um.edu.mo/)
+- [Chen Weiyu](https://github.com/weiyuchens) was my senior fellow apprentice and guide when I was an undergraduate student, and he is now a Ph.D. Candidate in artificial intelligence at King's College London.
