@@ -80,13 +80,13 @@ analytics:
 
 # Site Author
 author:
-  name             : "Junchao Wu"
+  name             : "WU JUNCHAO"
   avatar           : "profile.png"
-  bio              : "Undergraduate Student"
-  location         : "Zhuhai, China"
-  employer         :
+  bio              : "M.S. Student"
+  location         : "Macao"
+  employer         : "University of Macao"
   googlescholar    : # "http://yourfullgooglescholarurl.com"
-  email            : "wujunchaoIU@outlook.com"
+  email            : "mc25653@umac.mo"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
