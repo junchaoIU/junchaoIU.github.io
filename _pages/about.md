@@ -67,3 +67,4 @@ Others
 ======
 - If you are also interested in machine translation, you can follow my senior fellow apprentice and Lab: [Zhan Runzhe](https://runzhe.me/) and [NLP2CT LAB](http://nlp2ct.cis.um.edu.mo/)
 - [Chen Weiyu](https://github.com/weiyuchens) was my senior fellow apprentice and guide when I was an undergraduate student, and he is now a Ph.D. Candidate in artificial intelligence at King's College London.
+- [Chen Xin](https://github.com/Chen-X666) is one of my best friends, who focus on BA and NLP at University of Southampton currently, he has a lot of interesting dreams.
