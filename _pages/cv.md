@@ -12,7 +12,8 @@ You can download my [CV_Chinese version](../files/WU_Junchao_CV_ZH.pdf) and [CV_
 
 Education
 ======
-* B.S. in Information Management and Information System, Beijing Normal University, Zhuhai, *Sept. 2018 - Present*
+* B.S. in Information Management and Information System, Beijing Normal University, Zhuhai, *Sept. 2018 - July. 2022*
+* M.S. in Data Science with specialization in Computational Lingustics, University of Macao, *Sept. 2022 - Present*
 
 
 ## Work experience
@@ -66,10 +67,15 @@ Education
 
 Awards
 ======
+- Outstanding graduate of Beijing Normal University,Zhuhai, 2022
+- The Outstanding Graduation Thesis of Beijing Normal University, Zhuhai, 2022
+- Professional Scholarship of Beijing Normal University, Zhuhai, 2019, 2020, 2021
+- Academic Scholarship of Beijing Normal University, Zhuhai, 2021
+- Outstanding student cadre Honor of Beijing Normal University, Zhuhai, 2019, 2020
 - National Second Prize & Guangdong First Prize in the 7th Teddy Cup Data Mining Challenge (Title: Analysis of Safe Driving Behavior of Transport Vehicles), 2019
 - First Prize in China University Students Mathematical Contest in Modeling, Guangdong Division (Title: Credit Decisions of Small, Medium and Micro Enterprises), 2020
 - Best Presentation Award in the 10th IEEE International Conference on Education and Information Technology, ICEIT 2021
-- Third prize in the 8th "Challenge Cup" College Students' Extracurricular Academic Science and Technology Works Competition in Beijing Normal University, Zhuhai, 2020
+- Third Prize in the 8th "Challenge Cup" College Students' Extracurricular Academic Science and Technology Works Competition in Beijing Normal University, Zhuhai, 2020
 
 
 Professional skills
