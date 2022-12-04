@@ -53,7 +53,7 @@ Awards
 - First Prize in China University Students Mathematical Contest in Modeling, Guangdong Division (Title: Credit Decisions of Small, Medium and Micro Enterprises), 2020
 - Best Presentation Award in the 10th IEEE International Conference on Education and Information Technology, ICEIT 2021
 - Third Prize in the 8th "Challenge Cup" College Students' Extracurricular Academic Science and Technology Works Competition in Beijing Normal University, Zhuhai, 2020
-
+- Third Prize in the 2nd Guangdong-Hong Kong-Macau College Student Public Administration Data Analysis Contest, 2022
 
 Professional skills
 ======
