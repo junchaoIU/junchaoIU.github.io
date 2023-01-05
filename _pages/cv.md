@@ -76,12 +76,15 @@ Awards
 - First Prize in China University Students Mathematical Contest in Modeling, Guangdong Division (Title: Credit Decisions of Small, Medium and Micro Enterprises), 2020
 - Best Presentation Award in the 10th IEEE International Conference on Education and Information Technology, ICEIT 2021
 - Third Prize in the 8th "Challenge Cup" College Students' Extracurricular Academic Science and Technology Works Competition in Beijing Normal University, Zhuhai, 2020
-
+- Third Prize in the 2nd Guangdong-Hong Kong-Macau College Student Public Administration Data Analysis Contest, 2022
 
 Professional skills
 ======
 * English Level: IELTS(6.5), CET-6(507)
-* Languages: C, Python, JAVA, JavaScript, SQL, Bash 
-* Frameworks: SpringBoot, ReactJS, Scikit-learn, SpaCy, TensorFlow, Keras, Flask 
-* Other Tools: WebLogic, Ant, Neo4j, MySQL, Oracle, Jena, Git 
+* Programming Languages: C, Python, JAVA, JavaScript, SQL, Bash
+* Development Frameworks: SpringBoot, React.js, Flask
+* Deep Learning Tools: Scikit-learn, PyTorch, Keras, Fairseq, Transformers
+* DB Tools: Neo4j, MySQL, Oracle DB
+* Other Tools: WebLogic, Apache Ant, Jena, Git, Hanlp, Echart
 * Soft Skills: Leadership, Event Management, Writing, Public Speaking, Time Management
+
