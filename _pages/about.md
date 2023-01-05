@@ -58,9 +58,11 @@ Awards
 Professional skills
 ======
 * English Level: IELTS(6.5), CET-6(507)
-* Languages: C, Python, JAVA, JavaScript, SQL, Bash 
-* Frameworks: SpringBoot, ReactJS, Scikit-learn, SpaCy, TensorFlow, Keras, Flask 
-* Other Tools: WebLogic, Ant, Neo4j, MySQL, Oracle, Jena, Git 
+* Programming Languages: C, Python, JAVA, JavaScript, SQL, Bash
+* Development Frameworks: SpringBoot, React.js, Flask
+* Deep Learning Tools: Scikit-learn, PyTorch, Keras, Fairseq, Transformers
+* DB Tools: Neo4j, MySQL, Oracle DB
+* Other Tools: WebLogic, Apache Ant, Jena, Git, Hanlp, Echart
 * Soft Skills: Leadership, Event Management, Writing, Public Speaking, Time Management
 
 Others
