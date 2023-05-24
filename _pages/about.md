@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-- I am [WU JUNCHAO](https://junchaoiu.github.io) (吴俊潮). Currently, I am an M.S. Student at Data Science - Computational Lingustics, [University of Macao](https://www.um.edu.mo/), fortunately advised by [Prof. Derek F. Wong](https://www.fst.um.edu.mo/personal/derek-wong/). Previously,I am an undergraduate student at [Beijing Normal University, Zhuhai](https://english.bnuz.edu.cn/), supervised by [Prof. JiangYing](https://rsgyy.bnu.edu.cn/yjjg/glcxyjzx/glcxyjzxrcdw/97671.html) and [Prof. Yangjing](https://rsgyy.bnu.edu.cn/yjjg/yykxyjzx/rcdw2/97903.html). 
+- I am [WU JUNCHAO](https://junchaoiu.github.io) (吴俊潮). Currently, I am an M.S. Student at Data Science - Computational Lingustics, [University of Macau](https://www.um.edu.mo/), fortunately advised by [Prof. Derek F. Wong](https://www.fst.um.edu.mo/personal/derek-wong/) and [Prof. Yuan Yulin](https://fah.um.edu.mo/yuan-yulin/). Previously,I am an undergraduate student at [Beijing Normal University, Zhuhai](https://english.bnuz.edu.cn/), supervised by [Prof. JiangYing](https://rsgyy.bnu.edu.cn/yjjg/glcxyjzx/glcxyjzxrcdw/97671.html) and [Prof. Yangjing](https://rsgyy.bnu.edu.cn/yjjg/yykxyjzx/rcdw2/97903.html). 
 - My current research interests are Natural Language Processing, Machine Translation and Knowledge Graphs. Please feel free to contact me via email!
 
 Research Interests
