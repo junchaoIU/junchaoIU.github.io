@@ -19,9 +19,10 @@ Research Interests
 
 News
 ======
-- One paper accepted in **2022 5th International Conference on Big Data and Artificial Intelligence(BDAI2022)**. -2022-05-30
-- One paper accepted in **计算机应用研究（Application Research of Computer）**. -2022-04-11
-- One paper accepted in **情报探索（Information Research）**. -2022-03-30
+- One paper accepted by **Agriculture** as co-author.  -2023-06-13
+- One paper accepted by **2022 5th International Conference on Big Data and Artificial Intelligence(BDAI2022)** as co-author. -2022-05-30
+- One paper accepted by **计算机应用研究（Application Research of Computer）** as co-author. -2022-04-11
+- One paper accepted by **情报探索（Information Research）** as co-author. -2022-03-30
 - We open source [AutoProtégé](https://github.com/junchaoIU/AutoProtege) V2.0 in Github! -2022-02-15
 
 Publications
