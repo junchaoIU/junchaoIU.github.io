@@ -19,6 +19,7 @@ Research Interests
 
 News
 ======
+- One paper accepted by **2023 19th Machine Translation Summit (MTSummit 2023)** as co-author. -2023-09-07
 - One paper accepted by **Mathematics** as co-author.  -2023-07-22
 - One paper accepted by **Agriculture** as co-author.  -2023-06-13
 - One paper accepted by **2022 5th International Conference on Big Data and Artificial Intelligence(BDAI2022)** as co-author. -2022-05-30
