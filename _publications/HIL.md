@@ -9,7 +9,7 @@ venue: 'Proceedings of Machine Translation Summit XIX, Vol. 2: Users Track'
 paperurl: ''
 authors: 'Xinyi Yang, Runzhe Zhan, Derek F. Wong*, Junchao Wu, Lidia S. Chao'
 citation: ''
-paper: ''
-code: ''
+paper: 'https://arxiv.org/pdf/2310.08908v1.pdf'
+code: 'https://github.com/nlp2ct/hil-mt'
 show_year: true
 ---
