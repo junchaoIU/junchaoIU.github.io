@@ -1,7 +1,7 @@
 ---
 title: 'A Multistep Interval Prediction Method Combining Environmental Variables and Attention Mechanism for Egg Production Rate'
 collection: publications
-status: preprint
+status: published
 permalink: /publication/2023-06-13-general
 excerpt: ''
 date: 2023-06-13
@@ -9,6 +9,6 @@ venue: 'Agriculture'
 paperurl: ''
 authors: 'Hang Yin *, Zeyu Wu, Junchao Wu, Yalin Chen, Mingxuan Chen, Shixuan Luo, Lijun Gao, Shahbaz Gul Hassan *'
 citation: ''
-paper: ''
+paper: 'https://www.mdpi.com/2077-0472/13/6/1255/pdf?version=1686891205'
 code: ''
 ---
