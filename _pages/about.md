@@ -58,7 +58,7 @@ Professional skills
 
 Others
 ======
-- 🎓 If you are also interested in machine translation, you can follow my lab and lab members: [NLP2CT LAB](http://nlp2ct.cis.um.edu.mo/), I love them.
+- 🎓 If you are also interested in natural language processing and machine translation, you can follow my lab and lab members: [NLP2CT LAB](http://nlp2ct.cis.um.edu.mo/), I love them.
 - ⭐[Zhan Runzhe](https://runzhe.me/) is my current advisor, who focus on machine translation and LLMs. He is a brilliant scientist and one of the nicest people I have ever met.
 - ✨[Chen Weiyu](https://github.com/weiyuchens) was my advisor when I was an undergraduate student, and he is planning his own business territory now.
 - 🌈[Chen Xin](https://github.com/Chen-X666) is one of my best friends, who focus on Fintech and NLP at University of Southampton currently, he has many interesting dreams.
