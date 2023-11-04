@@ -14,18 +14,15 @@ redirect_from:
 Research Interests
 ======
 - Machine Translation: Unsupervised Machine Translation, Low-resource Translation
-- Knowledge Graphs: Automatic Construction of Domain Knowledge Graph, Spatiotemporal Knowledge Graph and Ontology
-- Data Mining: Public Opinion Analysis, New Word Discover
+- Large Language Models: Evaluation of LLMs, LLM-generated Text Detection, Prompt Engineering  
+- Other Interests: Knowledge Graphs and Ontology, Public Opinion Analysis
 
 News
 ======
-- One paper accepted by **2023 19th Machine Translation Summit (MTSummit 2023)** as co-author. -2023-09-07
+- [2023-10-23] Our survey paper on **LLM-generated Text Detection** is now available on Arxiv: *[A Survey on LLM-generated Text Detection: Necessity, Methods, and Future Directions](https://arxiv.org/abs/2310.14724)*.
+- [2023-10-13] One paper accepted by **MT Summit 2023** as co-author, and is now available on Arxiv: *[Human-in-the-loop Machine Translation with Large Language Model](https://arxiv.org/abs/2310.08908)*. 
 - One paper accepted by **Mathematics** as co-author.  -2023-07-22
 - One paper accepted by **Agriculture** as co-author.  -2023-06-13
-- One paper accepted by **2022 5th International Conference on Big Data and Artificial Intelligence(BDAI2022)** as co-author. -2022-05-30
-- One paper accepted by **计算机应用研究（Application Research of Computer）** as co-author. -2022-04-11
-- One paper accepted by **情报探索（Information Research）** as co-author. -2022-03-30
-- We open source [AutoProtégé](https://github.com/junchaoIU/AutoProtege) V2.0 in Github! -2022-02-15
 
 Publications
 ======
@@ -35,15 +32,6 @@ Publications
 {% endfor %}
 
 <br/>
-
-Research Project
-======
-* **Construction of a digital library for the history of modern China's revolution based on knowledge graph** : Worked as Project Manager -- *May 2019 - March 2021*
-
-* **Research and Application of Digitalization of Long March Red Cultural Resources Based on Knowledge Graph** : Worked as Backend Engineer -- *May 2020 - Present*
- 
-* **Research on text mining and cultural phenomenon based on bullet screen corpus** : Worked as Data Mining & Algorithm Engineer -- *May 2020 - Present*
-
 
 Awards
 ======
@@ -61,7 +49,7 @@ Awards
 Professional skills
 ======
 * English Level: IELTS(6.5), CET-6(507)
-* Programming Languages: C, Python, JAVA, JavaScript, SQL, Bash
+* Programming Languages: C, Python, Java, JavaScript, SQL, Bash
 * Development Frameworks: SpringBoot, React.js, Flask
 * Deep Learning Tools: Scikit-learn, PyTorch, Keras, Fairseq, Transformers
 * DB Tools: Neo4j, MySQL, Oracle DB
@@ -70,6 +58,7 @@ Professional skills
 
 Others
 ======
-- 🎓 If you are also interested in machine translation, you can follow my senior fellow apprentice and lab: [Zhan Runzhe](https://runzhe.me/) and [NLP2CT LAB](http://nlp2ct.cis.um.edu.mo/), I love them.
-- ✨[Chen Weiyu](https://github.com/weiyuchens) was my senior fellow apprentice and guide when I was an undergraduate student, and he is now a Ph.D. Candidate in artificial intelligence at King's College London.
-- 🌈[Chen Xin](https://github.com/Chen-X666) is one of my best friends, who focus on BA and NLP at University of Southampton currently, he has a lot of interesting dreams.
+- 🎓 If you are also interested in machine translation, you can follow my lab and lab members: [NLP2CT LAB](http://nlp2ct.cis.um.edu.mo/), I love them.
+- ⭐[Zhan Runzhe](https://runzhe.me/) is my current advisor, who focus on machine translation and LLMs. He is a brilliant scientist and one of the nicest people I have ever met.
+- ✨[Chen Weiyu](https://github.com/weiyuchens) was my advisor when I was an undergraduate student, and he is planning his own business territory now.
+- 🌈[Chen Xin](https://github.com/Chen-X666) is one of my best friends, who focus on Fintech and NLP at University of Southampton currently, he has many interesting dreams.
