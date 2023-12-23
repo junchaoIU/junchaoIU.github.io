@@ -20,8 +20,8 @@ Research Interests
 News
 ======
 - [2023-12-23] Really excited that my girlfriend and I published our first paper. It is worth commemorating this moment. Welcome to access it: *[Evolutionary game analysis of prefabricated buildings adoption under carbon emission trading scheme](https://www.sciencedirect.com/science/article/pii/S0360132323011484)*.
-- [2023-10-23] Our survey paper on **LLM-generated Text Detection** is now available on Arxiv: *[A Survey on LLM-generated Text Detection: Necessity, Methods, and Future Directions](https://arxiv.org/abs/2310.14724)*.
-- [2023-10-13] One paper accepted by **MT Summit 2023** as co-author, and is now available on Arxiv: *[Human-in-the-loop Machine Translation with Large Language Model](https://arxiv.org/abs/2310.08908)*. 
+- [2023-10-23] Our survey paper on **LLM-generated Text Detection** is now available on arxiv: *[A Survey on LLM-generated Text Detection: Necessity, Methods, and Future Directions](https://arxiv.org/abs/2310.14724)*.
+- [2023-10-13] One paper accepted by **MT Summit 2023** as co-author, and is now available on arxiv: *[Human-in-the-loop Machine Translation with Large Language Model](https://arxiv.org/abs/2310.08908)*. 
 - One paper accepted by **Mathematics** as co-author.  -2023-07-22
 - One paper accepted by **Agriculture** as co-author.  -2023-06-13
 
