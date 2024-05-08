@@ -1,0 +1,15 @@
+---
+title: 'Who Wrote This? The Key to Zero-Shot LLM-Generated Text Detection Is GECScore'
+collection: publications
+status: preprint
+permalink: /publication/GECScore
+excerpt: ''
+date: 2024-05-08
+venue: 'Preprint'
+paperurl: ''
+authors: 'Junchao Wu, Runzhe Zhan, Derek F. Wong*, Shu Yang, Xuebo Liu, Lidia S. Chao, Min Zhang'
+citation: ''
+paper: 'https://arxiv.org/pdf/2405.04286'
+code: ''
+show_year: true
+---
