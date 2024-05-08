@@ -11,5 +11,4 @@ authors: 'Junchao Wu, Shu Yang, Runzhe Zhan, Yulin Yuan*, Derek F. Wong*,  Lidia
 citation: ''
 paper: 'https://arxiv.org/pdf/2310.14724.pdf'
 code: 'https://github.com/NLP2CT/LLM-generated-Text-Detection'
-show_year: true
 ---
