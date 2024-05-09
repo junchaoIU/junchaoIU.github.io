@@ -19,7 +19,7 @@ Research Interests
 
 News
 ======
-- [2024-05-08] We release a new black-box zero-shot method called **GECScore** 🔍, a really simple but effective approach based on the observation that human-written texts often contain more grammatical errors than LLM-generated texts. You can check it on arxiv: *[Who Wrote This? The Key to Zero-Shot LLM-Generated Text Detection Is GECScore](https://arxiv.org/abs/2405.04286)*. 
+- [2024-05-08] We release a new black-box zero-shot LLM-generated text detection method called **GECScore** 🔍, a really simple but effective approach based on the observation that human-written texts often contain more grammatical errors than LLM-generated texts. You can check it on arxiv: *[Who Wrote This? The Key to Zero-Shot LLM-Generated Text Detection Is GECScore](https://arxiv.org/abs/2405.04286)*. 
 - [2024-01-30] Fortunately, I have been admitted to the Ph.D. program and will continue to pursue my Ph.D. degree in the NLP2CT Lab at UM, starting in August 2024. 💪
 - [2023-12-23] Really excited that my girlfriend and I published our first paper. It is worth commemorating this moment. Welcome to access it: *[Evolutionary game analysis of prefabricated buildings adoption under carbon emission trading scheme](https://www.sciencedirect.com/science/article/pii/S0360132323011484)*.
 - [2023-10-23] Our survey paper on **LLM-generated Text Detection** is now available on arxiv: *[A Survey on LLM-generated Text Detection: Necessity, Methods, and Future Directions](https://arxiv.org/abs/2310.14724)*.
