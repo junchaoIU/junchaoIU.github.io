@@ -12,13 +12,14 @@ You can download my [CV_Chinese version](../files/WU_Junchao_CV_ZH.pdf) and [CV_
 
 Education
 ======
-* B.S. in Information Management and Information System, Beijing Normal University, Zhuhai, *Sept. 2018 - July. 2022*
-* M.S. in Data Science with specialization in Computational Lingustics, University of Macao, *Sept. 2022 - Present*
+* B.S. in Information Management and Information System, Beijing Normal University, Zhuhai (BNUZ), *Sept. 2018 - July. 2022*
+* M.S. in Data Science with specialization in Computational Lingustics, University of Macau (UM), *Aug. 2022 - July. 2024*
+* Ph.D. student in Computer Science, University of Macau (UM), *Aug. 2024 - Present*
 
 
 ## Work experience
 <!-- ====== -->
-* **Research Assistant(Full-time): *Jan. 2022 - Present***
+* **Research Assistant(Full-time): *Jan. 2022 - July. 2022***
   * School of Management, Beijing Normal University, Zhuhai, Zhuhai, China
   * Conducted research on the intelligent question answering system in the history of modern Chinese revolution, and completed the construction of the V1.0 version
   * Conduct research on text mining and classification of BillBill community bullet chatter. I am mainly responsible for the position detection research, experimental implementation and model comparison of BillBill's bullet chat text.
