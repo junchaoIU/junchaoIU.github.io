@@ -13,8 +13,8 @@ redirect_from:
 
 Research Interests
 ======
-- Machine Translation: Unsupervised Machine Translation, Low-resource Translation
-- Large Language Models: Evaluation of LLMs, LLM-generated Text Detection, Prompt Engineering  
+- Machine Translation: Low-Resource, LLM for MT
+- Large Language Models: LLMs Evaluation, LLM-generated Text Detection, Data Selection
 - Other Interests: Knowledge Graphs and Ontology, Public Opinion Analysis
 
 News
