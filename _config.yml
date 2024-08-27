@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : "WUJUNCHAO6"
 facebook:
   username               :
   app_id                 :
@@ -82,13 +82,13 @@ analytics:
 author:
   name             : "Junchao Wu"
   avatar           : "profile.png"
-  bio              : "M.S. Student"
+  bio              : "Ph.D. Student"
   location         : "Macao"
   employer         : "University of Macau"
-  googlescholar    : # "http://yourfullgooglescholarurl.com"
-  email            : "mc25653@umac.mo"
+  googlescholar    : "https://scholar.google.com/citations?user=jhLZtgYAAAAJ&hl=zh-TW"
+  email            : "yc47493@umac.mo"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
+  uri              : "https://junchaoiu.github.io/"
   bitbucket        :
   codepen          :
   dribbble         :
@@ -96,6 +96,7 @@ author:
   facebook         :
   foursquare       :
   github           : "junchaoIU"
+  twitter          : "WUJUNCHAO6"
   google_plus      :
   keybase          :
   instagram        :
