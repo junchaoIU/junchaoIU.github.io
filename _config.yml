@@ -84,11 +84,11 @@ author:
   avatar           : "profile.png"
   bio              : "Ph.D. Student"
   location         : "Macao"
-  employer         : "University of Macau"
+  # employer         : "University of Macau"
   googlescholar    : "https://scholar.google.com/citations?user=jhLZtgYAAAAJ&hl=zh-TW"
   email            : "yc47493@umac.mo"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              : "https://junchaoiu.github.io/"
+  # uri              : "https://junchaoiu.github.io/"
   bitbucket        :
   codepen          :
   dribbble         :
@@ -103,7 +103,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/0000-0001-5044-3019"
+  # orcid            : "http://orcid.org/0000-0001-5044-3019"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
