@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 - I am [WU JUNCHAO](https://junchaoiu.github.io) (吴俊潮). Currently, I am a first-year Ph.D. student in Computer Science at [NLP2CT Lab](http://nlp2ct.cis.umac.mo/), [University of Macau](https://www.um.edu.mo/), fortunately advised by [Prof. Derek F. Wong](https://www.fst.um.edu.mo/personal/derek-wong/). Previously, I completed my M.S. in Data Science (Computational Lingustics) at the same lab, co-advised by [Prof. Derek F. Wong](https://www.fst.um.edu.mo/personal/derek-wong/) and [Prof. Yuan Yulin](https://fah.um.edu.mo/yuan-yulin/). I achineved my bachelor's degree at Beijing Normal University, Zhuhai, supervised by [Prof. JiangYing](https://rsgyy.bnu.edu.cn/yjjg/glcxyjzx/glcxyjzxrcdw/97671.html) and [Prof. Yangjing](https://rsgyy.bnu.edu.cn/yjjg/yykxyjzx/rcdw2/97903.html). 
-- My current research interests are Natural Language Processing, Machine Translation and Knowledge Graphs. Please feel free to contact me via email!
+- My current research interests are Natural Language Processing, Machine Translation and Trustworthy AI. Please feel free to contact me via email!
 
 Research Interests
 ======
