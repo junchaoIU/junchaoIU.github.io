@@ -1,15 +1,15 @@
 ---
-title: 'DetectEval: Benchmarking LLM-Generated Text Detection in Real-World Scenarios'
+title: 'DetectRL: Benchmarking LLM-Generated Text Detection in Real-World Scenarios'
 collection: publications
 status: preprint
-permalink: /publication/DetectEval
+permalink: /publication/DetectRL
 excerpt: ''
 date: 2024-09-27
-venue: 'NeurIPS (Datasets and Benchmarks Track)'
+venue: 'NeurIPS 2024 (Datasets and Benchmarks Track)'
 paperurl: ''
 authors: 'Junchao Wu, Runzhe Zhan, Derek F. Wong*, Shu Yang, Xinyi Yang, Yulin Yuan, Lidia S. Chao'
 citation: ''
 paper: 'https://openreview.net/forum?id=ZGMkOikEyv'
-code: ''
+code: 'https://github.com/NLP2CT/DetectRL'
 show_year: true
 ---
