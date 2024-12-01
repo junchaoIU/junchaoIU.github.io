@@ -13,15 +13,16 @@ redirect_from:
 
 Research Interests
 ======
-- Machine Translation: Low-Resource, LLM for MT
-- Large Language Models: LLMs Evaluation, LLM-generated Text Detection, Data Selection
+- Trustworthy AI: LLM-Generated Text Detection, Hallucination Detection, Pre-training Data Detection
+- Large Language Models: LLMs Evaluation, Data Selection for LLM Instruction Tuning
+- Machine Translation: Low-Resource, LLM-based MT
 - Other Interests: Knowledge Graphs and Ontology, Public Opinion Analysis
 
 News
 ======
-- [2024-09-27] One paper accepted by **NeurIPS 2024 D&B Track** as first-author: *[DetectEval: Benchmarking LLM-Generated Text Detection in Real-World Scenarios](https://openreview.net/forum?id=ZGMkOikEyv)*. We introduce a new benchmark, **DetectEval**, which covers multiple realistic scenarios, including usage of various prompts, human revisions of LLM-generated text, adversarial spelling errors, taking measures to attack detectors, etc., provide real utility to researchers on the topic and practitioners looking for consistent evaluation methods.
-- [2024-05-08] We release a new black-box zero-shot LLM-generated text detection method called **GECScore** 🔍, a really simple but effective approach based on the observation that human-written texts often contain more grammatical errors than LLM-generated texts. You can check it on arxiv: *[Who Wrote This? The Key to Zero-Shot LLM-Generated Text Detection Is GECScore](https://arxiv.org/abs/2405.04286)*. 
-- [2024-01-30] Fortunately, I have been admitted to the Ph.D. program and will continue to pursue my Ph.D. degree in the NLP2CT Lab at UM, starting in August 2024. 💪
+- [2024-11-31] One paper accepted by **COLING 2025** as first-author: *[Who Wrote This? The Key to Zero-Shot LLM-Generated Text Detection Is GECScore](https://arxiv.org/abs/2405.04286)*. We introduce a novel black-box zero-shot method for detecting LLM-generated text, called GECScore 🔍. This method is remarkably simple yet effective, based on the observation that LLMs tend to prefer grammatically correcting human-written text over LLM-generated text.
+- [2023-11-28] One paper accepted by **Computational Linguistics (CL)** as first-author: *[A Survey on LLM-generated Text Detection: Necessity, Methods, and Future Directions](https://arxiv.org/abs/2310.14724)*. This survey offers a comprehensive overview of the latest advancements in LLM-generated text detection, highlighting the urgent need for more robust methods. It reviews mainstream approaches, addresses key challenges, and outlines promising future research directions. The paper serves as both a clear introduction for newcomers and a valuable resource for experts seeking updates in the field.
+- [2024-09-27] One paper accepted by **NeurIPS 2024 D&B Track** as first-author: *[DetectRL: Benchmarking LLM-Generated Text Detection in Real-World Scenarios](https://openreview.net/forum?id=ZGMkOikEyv)*. We introduce a new benchmark, **DetectEval**, which covers multiple realistic scenarios, including usage of various prompts, human revisions of LLM-generated text, adversarial spelling errors, taking measures to attack detectors, etc., provide real utility to researchers on the topic and practitioners looking for consistent evaluation methods.
 - [2023-12-23] Really excited that my girlfriend and I published our first paper. It is worth commemorating this moment. Welcome to access it: *[Evolutionary game analysis of prefabricated buildings adoption under carbon emission trading scheme](https://www.sciencedirect.com/science/article/pii/S0360132323011484)*.
 - [2023-10-23] Our survey paper on **LLM-generated Text Detection** is now available on arxiv: *[A Survey on LLM-generated Text Detection: Necessity, Methods, and Future Directions](https://arxiv.org/abs/2310.14724)*.
 - [2023-10-13] One paper accepted by **MT Summit 2023** as co-author, and is now available on arxiv: *[Human-in-the-loop Machine Translation with Large Language Model](https://arxiv.org/abs/2310.08908)*. 
@@ -40,11 +41,8 @@ Services
 - Conference Reviewer: ICLR (2025), NeurIPS (2024), CCL (2024), NLPCC (2024)
 - Student Volunteer: MT Summit 2023
 - Teaching Assistant
-  - TA for Computational Linguistics (MSc) programme (2023 Fall)
+  - Computational Linguistics (MSc) programme (2023 Fall)
   - AHGC7315 Language and Linguistics (2023 Spring)
-
-
-
 
 Awards
 ======
@@ -64,16 +62,14 @@ Professional skills
 * English Level: IELTS(6.5), CET-6(507)
 * Programming Languages: C, Python, Java, JavaScript, SQL, Bash
 * Development Frameworks: SpringBoot, React.js, Flask
-* Deep Learning Tools: Scikit-learn, PyTorch, Keras, Fairseq, Transformers
+* Deep Learning Tools: Scikit-learn, PyTorch, Fairseq, Transformers
 * DB Tools: Neo4j, MySQL, Oracle DB
-* Other Tools: WebLogic, Apache Ant, Jena, Git, Hanlp, Echart
-* Soft Skills: Leadership, Event Management, Writing, Public Speaking, Time Management
+* Other Tools: WebLogic, Apache Ant, Jena, Git
 
 Others
 ======
 - 🎓 If you are also interested in natural language processing and machine translation, you can follow my lab and lab members: [NLP2CT LAB](http://nlp2ct.cis.um.edu.mo/), I love them.
-- ⭐[Zhan Runzhe](https://runzhe.me/) is my current advisor, who focus on machine translation and LLMs. He is a brilliant scientist and one of the nicest people I have ever met.
-- ✨[Chen Weiyu](https://github.com/weiyuchens) was my advisor when I was an undergraduate student, and he is planning his own business territory now.
+- ✨[Zhan Runzhe](https://runzhe.me/) is my current advisor, who focus on machine translation and LLMs. He is a brilliant scientist and one of the nicest people I have ever met.
 - 🌈[Chen Xin](https://github.com/Chen-X666) is one of my best friends, who focus on Fintech and NLP at University of Southampton currently, he has many interesting dreams.
 
 <a href="https://info.flagcounter.com/kvwb"><img src="https://s11.flagcounter.com/count/kvwb/bg_FFFFFF/txt_000000/border_CCCCCC/columns_5/maxflags_15/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
