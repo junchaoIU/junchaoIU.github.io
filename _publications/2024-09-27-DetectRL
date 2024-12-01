@@ -11,5 +11,4 @@ authors: 'Junchao Wu, Runzhe Zhan, Derek F. Wong*, Shu Yang, Xinyi Yang, Yulin Y
 citation: ''
 paper: 'https://openreview.net/forum?id=ZGMkOikEyv'
 code: 'https://github.com/NLP2CT/DetectRL'
-show_year: true
 ---
