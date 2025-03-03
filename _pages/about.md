@@ -41,6 +41,7 @@ Publications
 Services
 ======
 - Conference Reviewer: ACL ARR (2025), ICML(2025), ICLR (2025), NeurIPS (2024), CCL (2024), NLPCC (2024)
+- Journal Reviewer: ACM TIST
 - Student Volunteer: MT Summit 2023
 - Teaching Assistant
   - Computational Linguistics (MSc) programme (2023 Fall)
