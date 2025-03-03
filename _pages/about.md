@@ -20,12 +20,14 @@ Research Interests
 
 News
 ======
+- [2025-03-04] 🔥 We’re excited to announce a shared task at NLPCC 2025: [LLM-Generated Text Detection](https://github.com/NLP2CT/NLPCC-2025-Task1) !!! This task focuses on Chinese and offers a great opportunity to explore unique findings compared to English detection. Join us and create your own detector now! 🚀
 - [2024-11-31] One paper accepted by **COLING 2025** as first-author: *[Who Wrote This? The Key to Zero-Shot LLM-Generated Text Detection Is GECScore](https://arxiv.org/abs/2405.04286)*. We introduce a novel black-box zero-shot method for detecting LLM-generated text, called GECScore 🔍. This method is remarkably simple yet effective, based on the observation that LLMs tend to prefer grammatically correcting human-written text over LLM-generated text.
-- [2023-11-28] One paper accepted by **Computational Linguistics (CL)** as first-author: *[A Survey on LLM-generated Text Detection: Necessity, Methods, and Future Directions](https://arxiv.org/abs/2310.14724)*. This survey offers a comprehensive overview of the latest advancements in LLM-generated text detection, highlighting the urgent need for more robust methods. It reviews mainstream approaches, addresses key challenges, and outlines promising future research directions. The paper serves as both a clear introduction for newcomers and a valuable resource for experts seeking updates in the field.
+- [2024-11-28] One paper accepted by **Computational Linguistics (CL)** as first-author: *[A Survey on LLM-generated Text Detection: Necessity, Methods, and Future Directions](https://arxiv.org/abs/2310.14724)*. This survey offers a comprehensive overview of the latest advancements in LLM-generated text detection, highlighting the urgent need for more robust methods. It reviews mainstream approaches, addresses key challenges, and outlines promising future research directions. The paper serves as both a clear introduction for newcomers and a valuable resource for experts seeking updates in the field.
 - [2024-09-27] One paper accepted by **NeurIPS 2024 D&B Track** as first-author: *[DetectRL: Benchmarking LLM-Generated Text Detection in Real-World Scenarios](https://openreview.net/forum?id=ZGMkOikEyv)*. We introduce a new benchmark, **DetectEval**, which covers multiple realistic scenarios, including usage of various prompts, human revisions of LLM-generated text, adversarial spelling errors, taking measures to attack detectors, etc., provide real utility to researchers on the topic and practitioners looking for consistent evaluation methods.
-- [2023-12-23] Really excited that my girlfriend and I published our first paper. It is worth commemorating this moment. Welcome to access it: *[Evolutionary game analysis of prefabricated buildings adoption under carbon emission trading scheme](https://www.sciencedirect.com/science/article/pii/S0360132323011484)*.
-- [2023-10-23] Our survey paper on **LLM-generated Text Detection** is now available on arxiv: *[A Survey on LLM-generated Text Detection: Necessity, Methods, and Future Directions](https://arxiv.org/abs/2310.14724)*.
-- [2023-10-13] One paper accepted by **MT Summit 2023** as co-author, and is now available on arxiv: *[Human-in-the-loop Machine Translation with Large Language Model](https://arxiv.org/abs/2310.08908)*. 
+
+<!-- 这是一个注释，读者看不到 - [2023-12-23] Really excited that my girlfriend and I published our first paper. It is worth commemorating this moment. Welcome to access it: *[Evolutionary game analysis of prefabricated buildings adoption under carbon emission trading scheme](https://www.sciencedirect.com/science/article/pii/S0360132323011484)*. -->
+<!-- 这是一个注释，读者看不到 - [2023-10-23] Our survey paper on **LLM-generated Text Detection** is now available on arxiv: *[A Survey on LLM-generated Text Detection: Necessity, Methods, and Future Directions](https://arxiv.org/abs/2310.14724)*. -->
+<!-- 这是一个注释，读者看不到 - [2023-10-13] One paper accepted by **MT Summit 2023** as co-author, and is now available on arxiv: *[Human-in-the-loop Machine Translation with Large Language Model](https://arxiv.org/abs/2310.08908)*.  -->
 
 Publications
 ======
@@ -38,7 +40,7 @@ Publications
 
 Services
 ======
-- Conference Reviewer: ICLR (2025), NeurIPS (2024), CCL (2024), NLPCC (2024)
+- Conference Reviewer: ACL ARR (2025), ICML(2025), ICLR (2025), NeurIPS (2024), CCL (2024), NLPCC (2024)
 - Student Volunteer: MT Summit 2023
 - Teaching Assistant
   - Computational Linguistics (MSc) programme (2023 Fall)
