@@ -42,7 +42,7 @@ Publications
 Services
 ======
 - Conference Reviewer: ACL ARR, ICML, ICLR, NeurIPS, CCL, NLPCC
-- Journal Reviewer: Proceedings of the IEEE, TALLIP, TIST
+- Journal Reviewer: Proc. IEEE, IEEE TIFS, ACM TALLIP, ACM TIST
 - Student Volunteer: MT Summit 2023
 - Teaching Assistant
   - Computational Linguistics (MSc) programme (2023 Fall)
