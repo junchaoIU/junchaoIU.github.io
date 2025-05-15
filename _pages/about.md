@@ -20,7 +20,7 @@ Research Interests
 
 News
 ======
-- [2025-05-16] Two paper accepted by **ACL 2025 Findings** as co-author. Congratulations to all co-authors!
+- [2025-05-16] Two paper accepted by **ACL 2025 Findings** as co-author. Congratulations to Shu🌳, Xinyi, and all co-authors!
   - *[Fraud-R1: A Multi-Round Benchmark for Assessing the Robustness of LLM Against Augmented Fraud and Phishing Inducements](https://arxiv.org/abs/2502.12904)*. We introduce Fraud-R1, a benchmark evaluating LLMs' ability to resist internet fraud through 8,564 real-world cases, uncovering significant challenges in role-play scenarios and a performance gap between Chinese and English. 
   - *[Rethinking Prompt-based Debiasing in Large Language Models](https://arxiv.org/abs/2503.09219)*. We investigate bias in LLMs, revealing that prompt-based methods often provide superficial results, with flawed metrics and evaluation settings leading to misclassifications and evasive answers, highlighting the need to rethink bias metrics for trustworthy AI.
 - [2025-04-03] Our new preprint *[Understanding Aha Moments: from External Observations to Internal Mechanisms](https://arxiv.org/abs/2504.02956)* released. We reveal that "aha moments" help LRMs solve complex problems by using anthropomorphic language, adjusting uncertainty, and preventing reasoning collapse, while internally balancing self-reflection with reasoning and adapting to task difficulty.
