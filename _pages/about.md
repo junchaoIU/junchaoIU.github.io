@@ -22,8 +22,10 @@ News
 - [2025-06-27] One Evaluation Paper accepted by **CCL 2025 Evaluation Workkshop** as co-author, **Overview of CCL25-Eval Task 4: Factivity Inference Evaluation 2025**, we will update the paper in arxiv soon~
 - [2025-06-13] One Evaluation Paper accepted by **NLPCC 2025** as first-author, **Overview of the NLPCC 2025 Shared Task 1: LLM-Generated Text Detection**. We provide a comprehensive overview of the task, including the dataset, task design, evaluation results, and an in-depth analysis of the submitted solutions.
 - [2025-05-16] Two paper accepted by **ACL 2025 Findings** as co-author. Congratulations to Shu🌳, Xinyi, and all co-authors!
-  - *[Fraud-R1: A Multi-Round Benchmark for Assessing the Robustness of LLM Against Augmented Fraud and Phishing Inducements](https://arxiv.org/abs/2502.12904)*. We introduce Fraud-R1, a benchmark evaluating LLMs' ability to resist internet fraud through 8,564 real-world cases, uncovering significant challenges in role-play scenarios and a performance gap between Chinese and English. 
-  - *[Rethinking Prompt-based Debiasing in Large Language Models](https://arxiv.org/abs/2503.09219)*. We investigate bias in LLMs, revealing that prompt-based methods often provide superficial results, with flawed metrics and evaluation settings leading to misclassifications and evasive answers, highlighting the need to rethink bias metrics for trustworthy AI.
+  - *[Fraud-R1: A Multi-Round Benchmark for Assessing the Robustness of LLM Against Augmented Fraud and Phishing Inducements](https://arxiv.org/abs/2502.12904)*. 
+  <!-- We introduce Fraud-R1, a benchmark evaluating LLMs' ability to resist internet fraud through 8,564 real-world cases, uncovering significant challenges in role-play scenarios and a performance gap between Chinese and English. -->
+  - *[Rethinking Prompt-based Debiasing in Large Language Models](https://arxiv.org/abs/2503.09219)*. 
+  <!-- We investigate bias in LLMs, revealing that prompt-based methods often provide superficial results, with flawed metrics and evaluation settings leading to misclassifications and evasive answers, highlighting the need to rethink bias metrics for trustworthy AI. -->
 - [2025-04-03] Our new preprint *[Understanding Aha Moments: from External Observations to Internal Mechanisms](https://arxiv.org/abs/2504.02956)* released. We reveal that "aha moments" help LRMs solve complex problems by using anthropomorphic language, adjusting uncertainty, and preventing reasoning collapse, while internally balancing self-reflection with reasoning and adapting to task difficulty.
 - [2025-03-04] 🔥 We’re excited to announce a shared task at NLPCC 2025: [LLM-Generated Text Detection](https://github.com/NLP2CT/NLPCC-2025-Task1) !!! This task focuses on Chinese and offers a great opportunity to explore unique findings compared to English detection. Join us and create your own detector now! 🚀
 - [2024-11-31] One paper accepted by **COLING 2025** as first-author: *[Who Wrote This? The Key to Zero-Shot LLM-Generated Text Detection Is GECScore](https://arxiv.org/abs/2405.04286)*. We introduce a novel black-box zero-shot method for detecting LLM-generated text, called GECScore 🔍. This method is remarkably simple yet effective, based on the observation that LLMs tend to prefer grammatically correcting human-written text over LLM-generated text.
@@ -52,7 +54,15 @@ Services
   - Computational Linguistics (MSc) programme (2023 Fall)
   - AHGC7315 Language and Linguistics (2023 Spring)
 
-<!-- Awards
+Experience
+======
+- Alibaba Group - Research Intern (Jul. 2025 - Present)
+- PRADA Lab, KAUST - Visiting Intern (Mar. 2025 - Jun. 2025)
+
+
+
+<!-- 
+Awards
 ======
 - Outstanding graduate of Beijing Normal University,Zhuhai, 2022
 - The Outstanding Graduation Thesis of Beijing Normal University, Zhuhai, 2022
@@ -65,6 +75,7 @@ Services
 - Third Prize in the 8th "Challenge Cup" College Students' Extracurricular Academic Science and Technology Works Competition in Beijing Normal University, Zhuhai, 2020
 - Third Prize in the 2nd Guangdong-Hong Kong-Macau College Student Public Administration Data Analysis Contest, 2022
 -->
+
 
 Professional skills
 ======
