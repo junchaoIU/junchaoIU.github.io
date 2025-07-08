@@ -13,13 +13,14 @@ redirect_from:
 
 Research Interests
 ======
-- Trustworthy AI: LLM-Generated Text Detection, Hallucination Detection, Pre-training Data Detection
-- Large Language Models: LLMs Evaluation, Data Selection for LLM Instruction Tuning
-- Machine Translation: Low-Resource, LLM-based MT
+- Regulatable & Trustworthy AI & Safety: LLM-Generated Text Detection; Hallucination Detection & Mitigation; Internal interpretability of LLMs; Cybersecurity Ability of LLMs
+- Machine Translation: Low-Resource, LLM-based MT (Document-Level; Culture; Idioms)
 - Other Interests: Knowledge Graphs and Ontology, Public Opinion Analysis
 
 News
 ======
+- [2025-06-27] One Evaluation Paper accepted by **CCL 2025 Evaluation Workkshop** as co-author, **Overview of CCL25-Eval Task 4: Factivity Inference Evaluation 2025**, we will update the paper in arxiv soon~
+- [2025-06-13] One Evaluation Paper accepted by **NLPCC 2025** as first-author, **Overview of the NLPCC 2025 Shared Task 1: LLM-Generated Text Detection**. We provide a comprehensive overview of the task, including the dataset, task design, evaluation results, and an in-depth analysis of the submitted solutions.
 - [2025-05-16] Two paper accepted by **ACL 2025 Findings** as co-author. Congratulations to Shu🌳, Xinyi, and all co-authors!
   - *[Fraud-R1: A Multi-Round Benchmark for Assessing the Robustness of LLM Against Augmented Fraud and Phishing Inducements](https://arxiv.org/abs/2502.12904)*. We introduce Fraud-R1, a benchmark evaluating LLMs' ability to resist internet fraud through 8,564 real-world cases, uncovering significant challenges in role-play scenarios and a performance gap between Chinese and English. 
   - *[Rethinking Prompt-based Debiasing in Large Language Models](https://arxiv.org/abs/2503.09219)*. We investigate bias in LLMs, revealing that prompt-based methods often provide superficial results, with flawed metrics and evaluation settings leading to misclassifications and evasive answers, highlighting the need to rethink bias metrics for trustworthy AI.
@@ -51,7 +52,7 @@ Services
   - Computational Linguistics (MSc) programme (2023 Fall)
   - AHGC7315 Language and Linguistics (2023 Spring)
 
-Awards
+<!-- Awards
 ======
 - Outstanding graduate of Beijing Normal University,Zhuhai, 2022
 - The Outstanding Graduation Thesis of Beijing Normal University, Zhuhai, 2022
@@ -63,6 +64,7 @@ Awards
 - Best Presentation Award in the 10th IEEE International Conference on Education and Information Technology, ICEIT 2021
 - Third Prize in the 8th "Challenge Cup" College Students' Extracurricular Academic Science and Technology Works Competition in Beijing Normal University, Zhuhai, 2020
 - Third Prize in the 2nd Guangdong-Hong Kong-Macau College Student Public Administration Data Analysis Contest, 2022
+-->
 
 Professional skills
 ======
@@ -77,6 +79,6 @@ Others
 ======
 - 🎓 If you are also interested in natural language processing and machine translation, you can follow my lab and lab members: [NLP2CT LAB](http://nlp2ct.cis.um.edu.mo/), I love them.
 - ✨[Zhan Runzhe](https://runzhe.me/) is my current advisor, who focus on machine translation and LLMs. He is a brilliant scientist and one of the nicest people I have ever met.
-- 🌈[Chen Xin](https://github.com/Chen-X666) is one of my best friends, who focus on Fintech and NLP at University of Southampton currently, he has many interesting dreams.
+- 🌈[Chen Xin](https://github.com/Chen-X666) is one of my best friends, who is a incoming PhD student at Nanjing University and is also committed to NLP research., he has many interesting dreams.
 
 <a href="https://info.flagcounter.com/kvwb"><img src="https://s11.flagcounter.com/count/kvwb/bg_FFFFFF/txt_000000/border_CCCCCC/columns_5/maxflags_15/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
