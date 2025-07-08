@@ -5,7 +5,7 @@ status: preprint
 permalink: /publication/Rethinking_Prompt-based_Debiasing
 excerpt: ''
 date: 2025-03-12
-venue: 'ACL 2025 Findings'
+venue: 'ACL Findings'
 paperurl: ''
 authors: 'Xinyi Yang, Runzhe Zhan, Derek F. Wong*, Shu Yang, Junchao Wu, Lidia S. Chao'
 citation: ''

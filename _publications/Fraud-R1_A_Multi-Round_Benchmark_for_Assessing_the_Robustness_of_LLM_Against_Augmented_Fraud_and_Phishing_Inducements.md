@@ -5,7 +5,7 @@ status: preprint
 permalink: /publication/Fraud-R1
 excerpt: ''
 date: 2025-02-18
-venue: 'ACL 2025 Findings'
+venue: 'ACL Findings'
 paperurl: ''
 authors: 'Shu Yang, Shenzhe Zhu, Zeyu Wu, Keyu Wang, Junchi Yao, Junchao Wu, Lijie Hu, Mengdi Li, Derek F Wong, Di Wang*'
 citation: ''

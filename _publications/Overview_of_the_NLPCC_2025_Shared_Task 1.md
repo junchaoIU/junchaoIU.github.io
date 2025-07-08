@@ -5,7 +5,7 @@ status: preprint
 permalink: /publication/NLPCC_2025_Shared_Task_1
 excerpt: ''
 date: 2025-06-14
-venue: 'NLPCC 2025'
+venue: 'NLPCC'
 paperurl: ''
 authors: 'Junchao Wu, Runzhe Zhan, Qianli Wang, Yulin Yuan, Lidia S. Chao, and Derek F. Wong*'
 citation: ''

@@ -7,7 +7,7 @@ excerpt: ''
 date: 2025-06-24
 venue: 'arxiv (Under Review)'
 paperurl: ''
-authors: 'Shu Yang, Junchao Wu, Xuansheng Wu, Derek Wong, Ninhao Liu, Di Wang*'
+authors: 'Shu Yang, Junchao Wu, Xuansheng Wu, Derek F. Wong, Ninhao Liu, Di Wang*'
 citation: ''
 paper: 'https://arxiv.org/abs/2506.19492'
 code: ''
