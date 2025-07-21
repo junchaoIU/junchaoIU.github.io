@@ -19,8 +19,9 @@ Research Interests
 
 News
 ======
-- [2025-06-27] One Evaluation Paper accepted by **CCL 2025 Evaluation Workshop** as co-author: **Overview of CCL25-Eval Task 4: Factivity Inference Evaluation 2025**, we will update the paper in arxiv soon~
-- [2025-06-13] One Evaluation Paper accepted by **NLPCC 2025** as first-author, **Overview of the NLPCC 2025 Shared Task 1: LLM-Generated Text Detection**. We provide a comprehensive overview of the task, including the dataset, task design, evaluation results, and an in-depth analysis of the submitted solutions.
+- [2025-06-27] One Evaluation Paper accepted by **CCL 2025 Evaluation Workshop** as co-author: *[Overview of CCL25-Eval Task 4: Factivity Inference Evaluation 2025]()*, we will update the paper in arxiv soon~
+- [2025-06-20] One Paper accepted by **Actionable Interpretability Workshop @ICML 2025** as co-author: *[Why Do Metrics Think That? Towards Understanding Large Language Models as Machine Translation Evaluators]()*.
+- [2025-06-13] One Evaluation Paper accepted by **NLPCC 2025** as first-author, *[Overview of the NLPCC 2025 Shared Task 1: LLM-Generated Text Detection]()*. We provide a comprehensive overview of the task, including the dataset, task design, evaluation results, and an in-depth analysis of the submitted solutions.
 - [2025-05-16] Two paper accepted by **ACL 2025 Findings** as co-author. Congratulations to Shu🌳, Xinyi, and all co-authors!
   - *[Fraud-R1: A Multi-Round Benchmark for Assessing the Robustness of LLM Against Augmented Fraud and Phishing Inducements](https://arxiv.org/abs/2502.12904)*. 
   <!-- We introduce Fraud-R1, a benchmark evaluating LLMs' ability to resist internet fraud through 8,564 real-world cases, uncovering significant challenges in role-play scenarios and a performance gap between Chinese and English. -->
@@ -30,7 +31,7 @@ News
 - [2025-03-04] 🔥 We’re excited to announce a shared task at NLPCC 2025: [LLM-Generated Text Detection](https://github.com/NLP2CT/NLPCC-2025-Task1) !!! This task focuses on Chinese and offers a great opportunity to explore unique findings compared to English detection. Join us and create your own detector now! 🚀
 - [2024-11-31] One paper accepted by **COLING 2025** as first-author: *[Who Wrote This? The Key to Zero-Shot LLM-Generated Text Detection Is GECScore](https://arxiv.org/abs/2405.04286)*. We introduce a novel black-box zero-shot method for detecting LLM-generated text, called GECScore 🔍. This method is remarkably simple yet effective, based on the observation that LLMs tend to prefer grammatically correcting human-written text over LLM-generated text.
 - [2024-11-28] One paper accepted by **Computational Linguistics (CL)** as first-author: *[A Survey on LLM-generated Text Detection: Necessity, Methods, and Future Directions](https://arxiv.org/abs/2310.14724)*. This survey offers a comprehensive overview of the latest advancements in LLM-generated text detection, highlighting the urgent need for more robust methods. It reviews mainstream approaches, addresses key challenges, and outlines promising future research directions. The paper serves as both a clear introduction for newcomers and a valuable resource for experts seeking updates in the field.
-- [2024-09-27] One paper accepted by **NeurIPS 2024 D&B Track** as first-author: *[DetectRL: Benchmarking LLM-Generated Text Detection in Real-World Scenarios](https://openreview.net/forum?id=ZGMkOikEyv)*. We introduce a new benchmark, **DetectRL**, which covers multiple realistic scenarios, including usage of various prompts, human revisions of LLM-generated text, adversarial spelling errors, taking measures to attack detectors, etc., provide real utility to researchers on the topic and practitioners looking for consistent evaluation methods.
+- [2024-09-27] One paper accepted by **NeurIPS 2024** as first-author: *[DetectRL: Benchmarking LLM-Generated Text Detection in Real-World Scenarios](https://openreview.net/forum?id=ZGMkOikEyv)*. We introduce a new benchmark, **DetectRL**, which covers multiple realistic scenarios, including usage of various prompts, human revisions of LLM-generated text, adversarial spelling errors, taking measures to attack detectors, etc., provide real utility to researchers on the topic and practitioners looking for consistent evaluation methods.
 
 <!-- 这是一个注释，读者看不到 - [2023-12-23] Really excited that my girlfriend and I published our first paper. It is worth commemorating this moment. Welcome to access it: *[Evolutionary game analysis of prefabricated buildings adoption under carbon emission trading scheme](https://www.sciencedirect.com/science/article/pii/S0360132323011484)*. -->
 <!-- 这是一个注释，读者看不到 - [2023-10-23] Our survey paper on **LLM-generated Text Detection** is now available on arxiv: *[A Survey on LLM-generated Text Detection: Necessity, Methods, and Future Directions](https://arxiv.org/abs/2310.14724)*. -->
@@ -57,7 +58,7 @@ Services
 Experience
 ======
 - Alibaba Group - Research Intern (Jul. 2025 - Present)
-- PRADA Lab, KAUST - Visiting Intern (Mar. 2025 - Jun. 2025)
+- PRADA Lab, KAUST - Visiting Research Intern (Mar. 2025 - Jun. 2025)
 
 
 
