@@ -13,14 +13,14 @@ redirect_from:
 
 Research Interests
 ======
-- Regulatable & Trustworthy AI & Safety: LLM-Generated Text Detection; Hallucination Detection & Mitigation; Internal interpretability of LLMs; Cybersecurity Ability of LLMs
+- Explainable & Trustworthy AI & Safety: LLM-Generated Text Detection; Hallucination Detection & Mitigation; Internal interpretability of LLMs; Cybersecurity Ability of LLMs
 - Machine Translation: Low-Resource, LLM-based MT (Document-Level; Culture; Idioms)
 - Other Interests: Knowledge Graphs and Ontology, Public Opinion Analysis
 
 News
 ======
 - [2025-06-27] One Evaluation Paper accepted by **CCL 2025 Evaluation Workshop** as co-author: *[Overview of CCL25-Eval Task 4: Factivity Inference Evaluation 2025]()*, we will update the paper in arxiv soon~
-- [2025-06-20] One Paper accepted by **Actionable Interpretability Workshop @ICML 2025** as co-author: *[Why Do Metrics Think That? Towards Understanding Large Language Models as Machine Translation Evaluators]()*.
+<!-- - [2025-06-20] One Paper accepted by **Actionable Interpretability Workshop @ICML 2025** as co-author: *[Why Do Metrics Think That? Towards Understanding Large Language Models as Machine Translation Evaluators]()*. -->
 - [2025-06-13] One Evaluation Paper accepted by **NLPCC 2025** as first-author, *[Overview of the NLPCC 2025 Shared Task 1: LLM-Generated Text Detection]()*. We provide a comprehensive overview of the task, including the dataset, task design, evaluation results, and an in-depth analysis of the submitted solutions.
 - [2025-05-16] Two paper accepted by **ACL 2025 Findings** as co-author. Congratulations to Shu🌳, Xinyi, and all co-authors!
   - *[Fraud-R1: A Multi-Round Benchmark for Assessing the Robustness of LLM Against Augmented Fraud and Phishing Inducements](https://arxiv.org/abs/2502.12904)*. 
