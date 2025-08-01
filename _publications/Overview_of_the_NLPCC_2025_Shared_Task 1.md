@@ -7,7 +7,7 @@ excerpt: ''
 date: 2025-06-14
 venue: 'NLPCC'
 paperurl: ''
-authors: 'Junchao Wu, Runzhe Zhan, Qianli Wang, Yulin Yuan, Lidia S. Chao, and Derek F. Wong*'
+authors: 'Junchao Wu, Runzhe Zhan, Qianli Wang, Yulin Yuan, Lidia S. Chao, and Derek F. Wong†'
 citation: ''
 paper: ''
 code: ''
