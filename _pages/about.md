@@ -19,7 +19,7 @@ Research Interests
 
 News
 ======
-- [2025-05-16] Two paper accepted by **EMNLP 2025 Findings** as Co-author. And our CL paper [A Survey on LLM-generated Text Detection: Necessity, Methods, and Future Directions](https://arxiv.org/abs/2310.14724) will also oral present in **EMNLP 2025**. See you in Suzhou!!!
+- [2025-08-21] Two paper accepted by **EMNLP 2025 Findings** as Co-author. And our CL paper [A Survey on LLM-generated Text Detection: Necessity, Methods, and Future Directions](https://arxiv.org/abs/2310.14724) will also oral present in **EMNLP 2025**. See you in Suzhou!!!
   - *[Can Large Language Models Identify Implicit Suicidal Ideation? An Empirical Evaluation](https://arxiv.org/abs/2502.17899)*. 
   <!-- We introduce Fraud-R1, a benchmark evaluating LLMs' ability to resist internet fraud through 8,564 real-world cases, uncovering significant challenges in role-play scenarios and a performance gap between Chinese and English. -->
   - *[Benchmarking the Detection of LLMs-Generated Modern Chinese Poetry]()*. 
