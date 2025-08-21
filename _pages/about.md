@@ -19,6 +19,10 @@ Research Interests
 
 News
 ======
+- [2025-05-16] Two paper accepted by **EMNLP 2025 Findings** as Co-author. And our CL paper [A Survey on LLM-generated Text Detection: Necessity, Methods, and Future Directions](https://arxiv.org/abs/2310.14724) will also oral present in **EMNLP 2025**. See you in Suzhou!!!
+  - *[Can Large Language Models Identify Implicit Suicidal Ideation? An Empirical Evaluation](https://arxiv.org/abs/2502.17899)*. 
+  <!-- We introduce Fraud-R1, a benchmark evaluating LLMs' ability to resist internet fraud through 8,564 real-world cases, uncovering significant challenges in role-play scenarios and a performance gap between Chinese and English. -->
+  - *[Benchmarking the Detection of LLMs-Generated Modern Chinese Poetry]()*. 
 - [2025-08-01] One Paper accepted by **Transactions of the Association for Computational Linguistics (TACL)** as Co-first author: *[RepreGuard: Detecting LLM-Generated Text by Revealing Hidden Representation Patterns]()*. We propose RepreGuard, a low-overhead, highly generalizable, and interpretable detector, based on the observation that there are significant differences in neural activation patterns when LLMs process LLM-generated text versus human-written text.
 - [2025-06-27] One Evaluation Paper accepted by **CCL 2025 Evaluation Workshop** as Co-author: *[Overview of CCL25-Eval Task 4: Factivity Inference Evaluation 2025]()*, we will update the paper in arxiv soon~
 <!-- - [2025-06-20] One Paper accepted by **Actionable Interpretability Workshop @ICML 2025** as Co-author: *[Why Do Metrics Think That? Towards Understanding Large Language Models as Machine Translation Evaluators]()*. -->
