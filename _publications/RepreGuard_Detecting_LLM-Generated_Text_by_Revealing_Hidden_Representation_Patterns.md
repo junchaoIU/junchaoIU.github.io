@@ -11,5 +11,5 @@ authors: 'Xin Chen*, Junchao Wu*, Shu Yang, Runzhe Zhan, Zeyu Wu, Ziyang Luo, Di
 citation: ''
 paper: 'https://arxiv.org/abs/2506.19492'
 code: ''
-show_year: true
+show_year: false
 ---
