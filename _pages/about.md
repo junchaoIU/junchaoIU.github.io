@@ -62,7 +62,7 @@ Services
 
 Experience
 ======
-- Alibaba International, Alibaba Group - LLM Research Intern (Jul. 2025 - Present), Hosted by [Dr. Yefeng Liu](https://openreview.net/profile?id=~Yefeng_Liu4) and [Dr. Longyue Wang](https://www.longyuewang.com/).
+- Alibaba International, Alibaba Group - LLM Research Intern (Jul. 2025 - Present), Hosted by [Yichao Du](https://duyichao.github.io/), [Yefeng Liu](https://openreview.net/profile?id=~Yefeng_Liu4) and [Longyue Wang](https://www.longyuewang.com/).
 - PRADA Lab, King Abdullah University of Science and Technology (KAUST) - Visiting Research Intern (Mar. 2025 - Jun. 2025), Hosted by [Prof. Di Wang](https://shao3wangdi.github.io/).
 
 
