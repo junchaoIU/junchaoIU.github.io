@@ -19,7 +19,7 @@ Research Interests
 
 News
 ======
-- [2026-01-27] One paper accepted by *ICLR 2026** as Co-first author: [Neuron-Aware Data Selection in Instruction Tuning for Large Language Models](https://openreview.net/forum?id=uq6UWRgzMr). We propose the Nait framework, which selects optimal instruction tuning data samples by analyzing the similarity of neuron activation patterns. 
+- [2026-01-27] One paper accepted by **ICLR 2026** as Co-first author: [Neuron-Aware Data Selection in Instruction Tuning for Large Language Models](https://openreview.net/forum?id=uq6UWRgzMr). We propose the Nait framework, which selects optimal instruction tuning data samples by analyzing the similarity of neuron activation patterns. 
 - [2026-01-05] One paper accepted by **ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP)** as Co-author. Congratulations to Xinyi and all Co-authors!
 - [2025-08-21] Two paper accepted by **EMNLP 2025 Findings** as Co-author. And our CL paper [A Survey on LLM-generated Text Detection: Necessity, Methods, and Future Directions](https://arxiv.org/abs/2310.14724) and TACL paper [RepreGuard: Detecting LLM-Generated Text by Revealing Hidden Representation Patterns](https://arxiv.org/abs/2508.13152) will also oral present in **EMNLP 2025**. See you in Suzhou!!!
   - *[Can Large Language Models Identify Implicit Suicidal Ideation? An Empirical Evaluation](https://arxiv.org/abs/2502.17899)*. 
