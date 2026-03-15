@@ -19,7 +19,7 @@ Research Interests
 
 News
 ======
-- [2026-03-14] One paper accepted by **CVPR 2026 Findings** as Co-author: [LongDocSpan: Extending LVLMs for Long Document Understanding].
+- [2026-03-14] One paper accepted by **CVPR 2026 Findings** as Co-author: **LongDocSpan: Extending LVLMs for Long Document Understanding**.
 - [2026-01-27] One paper accepted by **ICLR 2026** as Co-first author: [Neuron-Aware Data Selection in Instruction Tuning for Large Language Models](https://openreview.net/forum?id=uq6UWRgzMr). We propose the NAIT framework, which selects optimal instruction tuning data samples by evaluating the impact of IT data on LLMs performance by analyzing the similarity of neuron activation patterns between the IT dataset and the target domain capability. 
 - [2026-01-05] One paper accepted by **ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP)** as Co-author. Congratulations to Xinyi and all Co-authors!
 - [2025-08-21] Two paper accepted by **EMNLP 2025 Findings** as Co-author. And our CL paper [A Survey on LLM-generated Text Detection: Necessity, Methods, and Future Directions](https://arxiv.org/abs/2310.14724) and TACL paper [RepreGuard: Detecting LLM-Generated Text by Revealing Hidden Representation Patterns](https://arxiv.org/abs/2508.13152) will also oral present in **EMNLP 2025**. See you in Suzhou!!!
