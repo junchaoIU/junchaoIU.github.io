@@ -19,7 +19,8 @@ Research Interests
 
 News
 ======
-- [2026-01-27] One paper accepted by **ICLR 2026** as Co-first author: [Neuron-Aware Data Selection in Instruction Tuning for Large Language Models](https://openreview.net/forum?id=uq6UWRgzMr). We propose the Nait framework, which selects optimal instruction tuning data samples by analyzing the similarity of neuron activation patterns. 
+- [2026-03-14] One paper accepted by **CVPR 2026 Findings** as Co-author: [LongDocSpan: Extending LVLMs for Long Document Understanding].
+- [2026-01-27] One paper accepted by **ICLR 2026** as Co-first author: [Neuron-Aware Data Selection in Instruction Tuning for Large Language Models](https://openreview.net/forum?id=uq6UWRgzMr). We propose the NAIT framework, which selects optimal instruction tuning data samples by evaluating the impact of IT data on LLMs performance by analyzing the similarity of neuron activation patterns between the IT dataset and the target domain capability. 
 - [2026-01-05] One paper accepted by **ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP)** as Co-author. Congratulations to Xinyi and all Co-authors!
 - [2025-08-21] Two paper accepted by **EMNLP 2025 Findings** as Co-author. And our CL paper [A Survey on LLM-generated Text Detection: Necessity, Methods, and Future Directions](https://arxiv.org/abs/2310.14724) and TACL paper [RepreGuard: Detecting LLM-Generated Text by Revealing Hidden Representation Patterns](https://arxiv.org/abs/2508.13152) will also oral present in **EMNLP 2025**. See you in Suzhou!!!
   - *[Can Large Language Models Identify Implicit Suicidal Ideation? An Empirical Evaluation](https://arxiv.org/abs/2502.17899)*. 
@@ -35,9 +36,9 @@ News
   - *[Rethinking Prompt-based Debiasing in Large Language Models](https://arxiv.org/abs/2503.09219)*. 
   <!-- We investigate bias in LLMs, revealing that prompt-based methods often provide superficial results, with flawed metrics and evaluation settings leading to misclassifications and evasive answers, highlighting the need to rethink bias metrics for trustworthy AI. -->
 - [2025-04-03] Our new preprint *[Understanding Aha Moments: from External Observations to Internal Mechanisms](https://arxiv.org/abs/2504.02956)* released. We reveal that "aha moments" help LRMs solve complex problems by using anthropomorphic language, adjusting uncertainty, and preventing reasoning collapse, while internally balancing self-reflection with reasoning and adapting to task difficulty.
-- [2025-03-04] 🔥 We’re excited to announce a shared task at NLPCC 2025: [LLM-Generated Text Detection](https://github.com/NLP2CT/NLPCC-2025-Task1) !!! This task focuses on Chinese and offers a great opportunity to explore unique findings compared to English detection. Join us and create your own detector now! 🚀
 
 <!-- 这是一个注释，读者看不到 
+- [2025-03-04] 🔥 We’re excited to announce a shared task at NLPCC 2025: [LLM-Generated Text Detection](https://github.com/NLP2CT/NLPCC-2025-Task1) !!! This task focuses on Chinese and offers a great opportunity to explore unique findings compared to English detection. Join us and create your own detector now! 🚀
 - [2024-11-31] One paper accepted by **COLING 2025** as First-author: *[Who Wrote This? The Key to Zero-Shot LLM-Generated Text Detection Is GECScore](https://arxiv.org/abs/2405.04286)*. We introduce a novel black-box zero-shot method for detecting LLM-generated text, called GECScore 🔍. This method is remarkably simple yet effective, based on the observation that LLMs tend to prefer grammatically correcting human-written text over LLM-generated text.
 - [2024-11-28] One paper accepted by **Computational Linguistics (CL)** as First-author: *[A Survey on LLM-generated Text Detection: Necessity, Methods, and Future Directions](https://arxiv.org/abs/2310.14724)*. This survey offers a comprehensive overview of the latest advancements in LLM-generated text detection, highlighting the urgent need for more robust methods. It reviews mainstream approaches, addresses key challenges, and outlines promising future research directions. The paper serves as both a clear introduction for newcomers and a valuable resource for experts seeking updates in the field.
 - [2024-09-27] One paper accepted by **NeurIPS 2024** as First-author: *[DetectRL: Benchmarking LLM-Generated Text Detection in Real-World Scenarios](https://openreview.net/forum?id=ZGMkOikEyv)*. We introduce a new benchmark, **DetectRL**, which covers multiple realistic scenarios, including usage of various prompts, human revisions of LLM-generated text, adversarial spelling errors, taking measures to attack detectors, etc., provide real utility to researchers on the topic and practitioners looking for consistent evaluation methods.
@@ -67,9 +68,9 @@ Services
 
 Experience
 ======
-- Alibaba Cloud, Alibaba Group - LLM Research Intern (Feb. 2026 - Present), Hosted by [Yichao Du](https://duyichao.github.io/) and [Longyue Wang](https://www.longyuewang.com/).
-- Alibaba International, Alibaba Group - LLM Research Intern (Jul. 2025 - Jan. 2026), Hosted by [Yichao Du](https://duyichao.github.io/), [Yefeng Liu](https://openreview.net/profile?id=~Yefeng_Liu4) and [Longyue Wang](https://www.longyuewang.com/).
-- PRADA Lab, King Abdullah University of Science and Technology (KAUST) - Visiting Research Intern (Mar. 2025 - Jun. 2025), Hosted by [Prof. Di Wang](https://shao3wangdi.github.io/).
+- Alibaba Cloud, Alibaba Group - LLM Research Intern (Feb. 2026 - Present), Supervised by [Yichao Du](https://duyichao.github.io/) and [Longyue Wang](https://www.longyuewang.com/).
+- Alibaba International, Alibaba Group - LLM Research Intern (Jul. 2025 - Jan. 2026), Supervised by [Yichao Du](https://duyichao.github.io/), [Yefeng Liu](https://openreview.net/profile?id=~Yefeng_Liu4) and [Longyue Wang](https://www.longyuewang.com/).
+- PRADA Lab, King Abdullah University of Science and Technology (KAUST) - Visiting Research Intern (Mar. 2025 - Jun. 2025), Supervised by [Prof. Di Wang](https://shao3wangdi.github.io/).
 
 
 
