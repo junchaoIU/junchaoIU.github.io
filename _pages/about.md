@@ -109,5 +109,6 @@ Others
 - 🎓 If you are also interested in natural language processing and machine translation, you can follow my lab and lab members: [NLP2CT LAB](http://nlp2ct.cis.um.edu.mo/), I love them.
 - ✨[Zhan Runzhe](https://runzhe.me/) is my current advisor, who focus on machine translation and LLMs. He is a brilliant scientist and one of the nicest people I have ever met.
 - 🌈[Chen Xin](https://github.com/Chen-X666) is one of my best friends, who is presently a PhD student at Nanjing University and is also committed to NLP research., he has many interesting dreams.
+- ❤ He Qiufeng, the love of my life and the best gift life has given me. A brilliant PhD candidate in civil engineering at Shenzhen University, and we dream to write the future of AI + Civil Engineering together. With her,everything matters, and everything awaits.
 
 <a href="https://info.flagcounter.com/kvwb"><img src="https://s11.flagcounter.com/count/kvwb/bg_FFFFFF/txt_000000/border_CCCCCC/columns_5/maxflags_15/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
