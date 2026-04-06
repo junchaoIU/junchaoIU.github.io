@@ -23,6 +23,9 @@ My core research centers on **explainable, trustworthy, and secure large languag
 
 News
 ======
+- [2026-04-07] Two paper accepted by **ACL 2026 Main**:
+  - **DetectRL-X: Towards Reliable Multilingual and Real-World LLM-Generated Text Detection** (Firsr-author): Proposes a novel multilingual LLM-generated text detection benchmark DetectRL-X, covering 8 languages. We innovatively introduces a LLM-refined writing detection task and systematically discusses the generalization ability and core challenges of detectors across languages of varying complexity and adversarial scenarios.
+  - **Understanding and Mitigating Political Stance Cross-topic Generalization in Large Language Models** (Co-author).
 - [2026-03-14] One paper accepted by **CVPR 2026 Findings** as Co-author: **LongDocSpan: Extending LVLMs for Long Document Understanding**.
 - [2026-01-27] One paper accepted by **ICLR 2026** as Co-first author: [Neuron-Aware Data Selection in Instruction Tuning for Large Language Models](https://openreview.net/forum?id=uq6UWRgzMr). We propose the NAIT framework, which selects optimal instruction tuning data samples by evaluating the impact of IT data on LLMs performance by analyzing the similarity of neuron activation patterns between the IT dataset and the target domain capability. 
 - [2026-01-05] One paper accepted by **ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP)** as Co-author. Congratulations to Xinyi and all Co-authors!
