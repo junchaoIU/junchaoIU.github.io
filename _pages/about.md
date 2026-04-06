@@ -11,11 +11,15 @@ redirect_from:
 - I am [WU JUNCHAO](https://junchaoiu.github.io) (吴俊潮). Currently, I am a second-year Ph.D. student in Computer Science at [NLP2CT Lab](http://nlp2ct.cis.umac.mo/), [University of Macau](https://www.um.edu.mo/), fortunately advised by [Prof. Derek F. Wong](https://www.fst.um.edu.mo/personal/derek-wong/). Previously, I completed my M.S. in Data Science (Computational Lingustics) at the same lab, co-advised by [Prof. Derek F. Wong](https://www.fst.um.edu.mo/personal/derek-wong/) and [Prof. Yuan Yulin](https://fah.um.edu.mo/yuan-yulin/). I achineved my bachelor's degree at Beijing Normal University, Zhuhai, supervised by [Prof. JiangYing](https://rsgyy.bnu.edu.cn/yjjg/glcxyjzx/glcxyjzxrcdw/97671.html) and [Prof. Yangjing](https://rsgyy.bnu.edu.cn/yjjg/yykxyjzx/rcdw2/97903.html). 
 - My current research interests are Natural Language Processing, Machine Translation and Trustworthy AI. Please feel free to contact me via email!
 
-Research Interests
+Research Overview
 ======
-- Explainable & Trustworthy AI & Safety: LLM-Generated Text Detection; Hallucination Detection & Mitigation; Internal interpretability of LLMs; Cybersecurity Ability of LLMs
-- Machine Translation: Low-Resource, LLM-based MT (Document-Level; Culture; Idioms)
-- Other Interests: Knowledge Graphs and Ontology, Public Opinion Analysis
+My core research centers on **explainable, trustworthy, and secure large language models (LLMs)**, with a primary focus on LLM-generated text detection and effecient model post-training.
+​
+- **LLM-Generated Text Detection & Benchmarking**: To address the opacity of AI-generated content, I developed detection frameworks that leverage intrinsic differences between human and model text, specifically in grammatical features [COLING'25] and hidden representation patterns [TACL'25]. I also constructed leading benchmarks tailored to real-world scenarios [NeurIPS'24] and specialized domains, such as modern Chinese poetry [EMNLP'25], and organized the NLPCC 2025 shared task on this topic [NLPCC'25]. Additionally, I published a systematic survey [Computational Linguistics'24] that highlights the field’s key challenges and future directions.​
+
+- **Effecient and Controllable LLM Tuning & Reasoning**: I also focus on efficient, controllable, and explainable LLM post-training and reasoning to optimize model reliability. I developed a neuron-aware data selection framework [ICLR'26] for efficient instruction tuning, which reduces dataset redundancy and bias by aligning training data with target domain neuron activation patterns. Collaboratively, I investigated internal reasoning mechanisms of LLMs, including "aha moments" in complex problem-solving [TACL'26] and inconsistencies in long-to-short text conversion [arXiv'25], to enhance model trustworthiness.
+​
+- **Collaborative Research on Multilingual & Safety**: I also engage in collaborative research on related directions, including: 1) domain-adaptive machine translation [TALLIP'26], where synthetic feedback is used to improve alignment with specialized terminology; 2) multimodal long-document understanding [CVPR'26], achieved by extending vision-language models (LVLMs) with segment-wise attention; and 3) LLM safety & ethics [ACL'25; EMNLP'25], covering debiasing optimization, resistance to fraud/phishing inducements, and implicit risk identification.
 
 News
 ======
