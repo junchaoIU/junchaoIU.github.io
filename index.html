@@ -1,0 +1,1680 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Junchao Wu</title>
+  <meta name="description" content="Junchao Wu personal homepage.">
+  <style>
+    :root {
+      --primary-text: #1f2937;
+      --secondary-text: #475569;
+      --accent-color: #7c3aed;
+      --accent-bg: #f5f3ff;
+      --accent-border: #ddd6fe;
+      --link-color: #6d28d9;
+      --border-color: #e2e8f0;
+      --bg-page: #f3f4f6;
+      --card-bg: #ffffff;
+      --callout-bg: #f5f3ff;
+      --callout-border: #ddd6fe;
+      --callout-text: #3b1f7a;
+    }
+
+    body {
+      margin: 0 auto;
+      padding: 16px 16px 28px;
+      font-family: "Times New Roman", Times, "Liberation Serif", serif;
+      font-size: 15px;
+      color: var(--secondary-text);
+      line-height: 1.6;
+      background: var(--bg-page);
+    }
+
+    .layout {
+      --content-max: 960px;
+      --nav-width: 220px;
+      width: 100%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, var(--content-max)) minmax(0, 1fr);
+      align-items: start;
+    }
+
+    /* ── Sidebar Navigation ── */
+    .sidebar-nav {
+      grid-column: 1;
+      grid-row: 1;
+      justify-self: center;
+      position: sticky;
+      top: 50vh;
+      transform: translateY(-50%);
+      width: var(--nav-width);
+      max-width: 100%;
+      border: none;
+      border-radius: 14px;
+      padding: 14px 12px;
+      background: linear-gradient(165deg, #ffffff 0%, var(--accent-bg) 100%);
+      box-shadow: 0 4px 18px rgba(124, 58, 237, 0.10);
+      text-align: center;
+      z-index: 10;
+    }
+
+    .sidebar-title {
+      margin: 0 0 10px;
+      font-size: 0.78rem;
+      color: var(--accent-color);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .sidebar-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sidebar-nav li { margin: 0 0 6px; }
+
+    .sidebar-nav a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 200px;
+      padding: 6px 10px;
+      color: #4c1d95;
+      font-size: 0.85rem;
+      font-weight: 700;
+      border-radius: 999px;
+      border: none;
+      background: transparent;
+      transition: color 0.18s ease, background 0.18s ease;
+      text-decoration: none;
+    }
+
+    .sidebar-nav a:hover {
+      color: var(--accent-color);
+      background: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+    }
+
+    .sidebar-nav a.active {
+      color: #fff;
+      background: var(--accent-color);
+      text-decoration: none;
+    }
+
+    /* ── Mobile Navigation ── */
+    .mobile-nav {
+      display: none;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      gap: 6px;
+      margin: 0 0 14px;
+      padding: 8px 0;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, var(--accent-bg) 100%);
+      border-bottom: none;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+    }
+
+    .mobile-nav::-webkit-scrollbar { display: none; }
+
+    .mobile-nav a {
+      flex: 0 0 auto;
+      padding: 5px 12px;
+      border: none;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #4c1d95;
+      text-decoration: none;
+      white-space: nowrap;
+      background: transparent;
+      transition: color 0.18s ease, background 0.18s ease;
+    }
+
+    .mobile-nav a:hover {
+      color: var(--accent-color);
+      background: rgba(255, 255, 255, 0.75);
+      text-decoration: none;
+    }
+
+    .mobile-nav a.active {
+      color: #fff;
+      background: var(--accent-color);
+      text-decoration: none;
+    }
+
+    /* ── Content Card ── */
+    .content {
+      grid-column: 2;
+      grid-row: 1;
+      min-width: 0;
+      max-width: var(--content-max);
+      width: 100%;
+      margin: 0;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 14px 16px 10px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    /* ── Profile Header ── */
+    .profile-header {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .profile-avatar {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      object-position: 50% 15%;
+      border-radius: 50%;
+      border: 2px solid #e5e7eb;
+      flex-shrink: 0;
+    }
+
+    .profile-name {
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    .profile-role {
+      margin: 5px 0 4px;
+      color: var(--secondary-text);
+      font-weight: 600;
+    }
+
+    .profile-research {
+      margin: 0 0 4px;
+      color: #6b7280;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .quick-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid #d8e0ea;
+      background: #fff;
+      color: #334155;
+      text-decoration: none;
+    }
+
+    .quick-link:hover {
+      border-color: var(--accent-border);
+      background: var(--accent-bg);
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    /* ── Typography ── */
+    h1, h2, h3 { color: var(--primary-text); font-weight: 700; }
+    h1 { font-size: 1.55rem; }
+    h2 { font-size: 1.25rem; }
+    h3 { font-size: 1.02rem; }
+
+    a { color: var(--link-color); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Section Title ── */
+    .section-title {
+      border-left: 4px solid var(--accent-color);
+      border-bottom: 1px solid var(--accent-border);
+      padding: 2px 0 6px 10px;
+      margin-top: 32px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      border-radius: 0;
+    }
+
+    .lead {
+      font-size: 0.92rem;
+      color: #374151;
+      margin-top: 10px;
+    }
+
+    /* ── Collab Callout ── */
+    .collab-callout {
+      margin: 16px 0 0;
+      padding: 12px 14px;
+      border: 1px solid var(--callout-border);
+      border-radius: 10px;
+      background: var(--callout-bg);
+      color: var(--callout-text);
+      font-size: 0.94rem;
+      line-height: 1.65;
+    }
+
+    /* ── Modern List (News) ── */
+    .modern-list {
+      list-style: disc;
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .modern-list li {
+      margin-bottom: 8px;
+      line-height: 1.6;
+      color: var(--secondary-text);
+    }
+
+    .modern-list-date {
+      display: inline-block;
+      font-weight: 600;
+      color: var(--accent-color);
+      font-size: 0.88rem;
+      font-family: inherit;
+      margin-right: 8px;
+    }
+
+    .modern-list-content { display: inline; }
+    .modern-list-content strong { color: var(--primary-text); }
+
+    /* ── Experience Card ── */
+    .exp-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .exp-card:hover {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+      transform: translateY(-2px);
+      border-color: #e5e7eb;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .exp-title {
+      font-size: 1.03rem;
+      font-weight: 700;
+      color: var(--primary-text);
+    }
+
+    .exp-date {
+      font-family: inherit;
+      font-size: 0.85rem;
+      color: var(--accent-color);
+      background: var(--accent-bg);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .exp-org {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--secondary-text);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .exp-logo {
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    .exp-desc {
+      font-size: 0.88rem;
+      color: #6b7280;
+      line-height: 1.5;
+      margin-top: 4px;
+    }
+
+    /* ── Mini Card (Working Papers / Preprints) ── */
+    .mini-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--border-color);
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+      transition: all 0.2s ease;
+    }
+
+    .mini-card:hover {
+      transform: translateX(4px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border-left-color: var(--accent-color);
+    }
+
+    .mini-card-title {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--primary-text);
+      margin-bottom: 4px;
+    }
+
+    .mini-card-authors {
+      font-size: 0.84rem;
+      color: var(--secondary-text);
+      margin-bottom: 4px;
+    }
+
+    .mini-card-authors strong { color: var(--primary-text); }
+
+    .mini-card-status {
+      font-size: 0.8rem;
+      font-style: italic;
+      color: #6b7280;
+    }
+
+    /* ── Paper Card ── */
+    .paper-card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 16px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+      gap: 16px;
+    }
+
+    .paper-card:hover {
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+      transform: translateY(-3px);
+      border-color: #e5e7eb;
+    }
+
+    .paper-image-container {
+      flex: 0 0 200px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #f3f4f6;
+      background: linear-gradient(135deg, #f5f3ff, #ede9fe);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .paper-image-container img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .paper-card:hover .paper-image-container img { transform: scale(1.05); }
+
+    .paper-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .paper-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary-text);
+      line-height: 1.4;
+      letter-spacing: -0.01em;
+      transition: color 0.2s ease;
+    }
+
+    .paper-authors {
+      font-size: 0.86rem;
+      color: var(--secondary-text);
+      line-height: 1.6;
+    }
+
+    .paper-authors strong {
+      color: var(--primary-text);
+      font-weight: 600;
+    }
+
+    .paper-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 2px;
+    }
+
+    .conf-badge {
+      background: var(--accent-bg);
+      color: var(--accent-color);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .ccf-badge {
+      background: #fefce8;
+      color: #a16207;
+      border: 1px solid #fde68a;
+      padding: 3px 9px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    .sci-q1-badge {
+      background: #fef2f2;
+      color: #991b1b;
+      border: 1px solid #fecaca;
+      padding: 3px 9px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    .paper-links {
+      margin-top: 4px;
+      display: flex;
+      gap: 8px;
+    }
+
+    .paper-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 12px;
+      border: 1px solid #e5e7eb;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #374151;
+      text-decoration: none;
+      background: #fff;
+      transition: all 0.2s ease;
+      gap: 6px;
+    }
+
+    .paper-btn:hover {
+      background: var(--accent-bg);
+      border-color: var(--accent-border);
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    .paper-btn-primary {
+      background: #1e1b4b;
+      border-color: #1e1b4b;
+      color: #ffffff;
+    }
+
+    .paper-btn-primary:hover {
+      background: #312e81;
+      border-color: #312e81;
+      color: #ffffff;
+    }
+
+    .paper-btn-secondary {
+      background: #fff;
+      border-color: var(--accent-border);
+      color: var(--accent-color);
+    }
+
+    .paper-btn-secondary:hover {
+      background: var(--accent-bg);
+      border-color: var(--accent-border);
+      color: var(--accent-color);
+    }
+
+    .gs-cite-badge {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.78rem;
+      color: var(--accent-color);
+      font-weight: 600;
+      background: var(--accent-bg);
+      padding: 3px 10px;
+      border-radius: 20px;
+      border: 1px solid var(--accent-border);
+      margin-left: 8px;
+      white-space: nowrap;
+    }
+
+    /* ── Publications toolbar ── */
+    .publications-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      min-height: 34px;
+    }
+
+    .muted-note {
+      font-size: 0.86rem;
+      color: #6b7280;
+      margin: 0;
+    }
+
+    .paper-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 0 auto;
+      padding: 3px;
+      border: 1px solid var(--border-color);
+      border-radius: 999px;
+      background: #fff;
+      flex-shrink: 0;
+    }
+
+    .paper-toggle-btn {
+      border: none;
+      background: transparent;
+      color: #4b5563;
+      font-family: inherit;
+      font-size: 0.86rem;
+      font-weight: 600;
+      line-height: 1.25;
+      padding: 5px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+
+    .paper-toggle-btn:hover {
+      color: var(--accent-color);
+      background: var(--accent-bg);
+    }
+
+    .paper-toggle-btn.is-active {
+      color: var(--accent-color);
+      background: var(--accent-bg);
+      box-shadow: inset 0 0 0 1px var(--accent-border);
+    }
+
+    #published-papers.is-selected-only .paper-card:not([data-selected="true"]) { display: none; }
+    #published-papers.is-selected-only .pub-cat-heading,
+    #published-papers.is-selected-only .pub-year-heading { display: none; }
+
+    /* ── Skills / Services chips ── */
+    .chip-group { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+    .chip-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #6b7280;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      width: 100%;
+      margin-bottom: 2px;
+    }
+    .chip {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent-color);
+      font-size: 0.8rem;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-weight: 500;
+      border: 1px solid var(--accent-border);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .paper-card { flex-direction: column; align-items: flex-start; padding: 14px; gap: 12px; }
+      .paper-image-container { flex: 100%; width: 100%; max-width: 100%; }
+    }
+
+    @media (max-width: 600px) {
+      .profile-header { flex-direction: column; align-items: flex-start; }
+      .exp-header { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .quick-links { margin-top: 8px; }
+      .publications-toolbar .paper-toggle { width: 100%; justify-content: flex-end; }
+    }
+
+    @media (max-width: 1440px) {
+      .layout { display: block; max-width: var(--content-max); margin: 0 auto; }
+      .content { grid-column: auto; grid-row: auto; }
+      .sidebar-nav { display: none; }
+      .mobile-nav { display: flex; }
+      .content [id] { scroll-margin-top: 56px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- ── Sidebar Navigation ── -->
+  <aside class="sidebar-nav">
+    <p class="sidebar-title">Navigate</p>
+    <ul>
+      <li><a href="#about-me">About</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#internships">Internships</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Professional Skills</a></li>
+      <li><a href="#services">Services</a></li>
+    </ul>
+  </aside>
+
+  <!-- ── Main Content ── -->
+  <main class="content">
+
+    <header class="profile-header" id="about-me">
+      <img src="https://junchaoiu.github.io/images/profile.png" alt="Junchao Wu" class="profile-avatar">
+      <div>
+        <h1 class="profile-name">Junchao Wu</h1>
+        <p class="profile-role">Ph.D. Student in Computer Science</p>
+        <p class="profile-research">NLP2CT Lab, University of Macau</p>
+        <div class="quick-links">
+          <a href="mailto:yc47493@umac.mo" class="quick-link">Email</a>
+          <a href="https://twitter.com/WUJUNCHAO6" target="_blank" class="quick-link">Twitter</a>
+          <a href="https://github.com/junchaoIU" target="_blank" class="quick-link">GitHub</a>
+          <a href="https://scholar.google.com/citations?user=jhLZtgYAAAAJ" target="_blank" class="quick-link">Google Scholar</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ── Mobile Nav ── -->
+    <nav class="mobile-nav" aria-label="Section navigation">
+      <a href="#about-me">About</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#internships">Internships</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Professional Skills</a>
+      <a href="#services">Services</a>
+    </nav>
+
+    <!-- ── About ── -->
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I am <strong>Junchao Wu</strong>. I am a second-year Ph.D. student in Computer Science at
+      <a href="http://nlp2ct.cis.umac.mo/" target="_blank">NLP2CT Lab</a>,
+      <a href="https://www.um.edu.mo/" target="_blank">University of Macau</a>,
+      fortunately advised by
+      <a href="https://www.fst.um.edu.mo/personal/derek-wong/" target="_blank">Prof. Derek F. Wong</a>.
+      Previously, I completed my M.S. in Data Science (Computational Linguistics) at the same lab, co-advised by <a href="https://www.fst.um.edu.mo/personal/derek-wong/" target="_blank">Prof. Derek F. Wong</a> and <a href="https://fah.um.edu.mo/yuan-yulin/" target="_blank">Prof. Yulin Yuan</a>.
+      I earned my bachelor's degree at Beijing Normal University, Zhuhai. I am currently doing a research internship at Alibaba Cloud.
+    </p>
+    <div class="collab-callout">
+      <strong>Research Interests</strong>: Trustworthy Large Language Models (explainable, controllable, and secure LLMs and their safety).
+      I am actively seeking top-tier research positions or internships. Please feel free to get in touch if you think there may be a good fit.
+    </div>
+
+    <h3 style="margin-top:18px;">Research Overview</h3>
+    <p class="lead">
+      My core research centers on <strong>explainable, trustworthy, and secure large language models (LLMs)</strong>,
+      with a primary focus on LLM-generated text detection and efficient model post-training.
+    </p>
+    <ul class="modern-list">
+      <li>
+        <strong>LLM-Generated Text Detection &amp; Benchmarking</strong>: To address the opacity of AI-generated content,
+        I released a systematic survey <a href="https://arxiv.org/pdf/2310.14724.pdf" target="_blank">[CL'25]</a> that highlights the field's key challenges and future directions.
+        I then developed detection frameworks leveraging grammatical <a href="https://arxiv.org/pdf/2405.04286" target="_blank">[COLING'25]</a> and representation pattern <a href="https://arxiv.org/abs/2508.13152" target="_blank">[TACL'25]</a> differences,
+        constructed leading benchmarks tailored to multilingual and real-world scenarios <a href="https://openreview.net/forum?id=ZGMkOikEyv" target="_blank">[NeurIPS'24]</a>; <a href="https://arxiv.org/abs/2605.15518" target="_blank">[ACL'26]</a> and
+        specialized domains (e.g., modern Chinese poetry <a href="https://arxiv.org/abs/2509.01620" target="_blank">[EMNLP'25]</a>), and organized the shared task on this topic <a href="https://link.springer.com/chapter/10.1007/978-981-95-3352-7_21" target="_blank">[NLPCC'25]</a>; <a href="#">[NLPCC'26]</a>.
+      </li>
+      <li>
+        <strong>Efficient and Controllable LLM Tuning &amp; Reasoning</strong>: Focusing on efficient, controllable, and explainable LLM post-training and reasoning,
+        I proposed a neuron-aware instruction tuning framework <a href="https://openreview.net/forum?id=uq6UWRgzMr" target="_blank">[ICLR'26]</a>. Collaboratively, I investigated internal reasoning mechanisms of LLMs,
+        including &quot;aha moments&quot; in complex problem-solving <a href="https://arxiv.org/abs/2504.02956" target="_blank">[TACL'26]</a> and COT monitorability in LRMs <a href="https://arxiv.org/abs/2506.19492" target="_blank">[arXiv'25]</a>,
+        to enhance model trustworthiness.
+      </li>
+      <li>
+        <strong>Interpretability &amp; Safety</strong>: I also work on LLM safety &amp; ethics <a href="https://arxiv.org/abs/2503.09219" target="_blank">[ACL'25]</a>; <a href="https://arxiv.org/abs/2502.12904" target="_blank">[EMNLP'25]</a>; <a href="#">[ACL'26]</a>,
+        covering debiasing optimization, resistance to fraud/phishing inducements, and political stance mitigation.
+      </li>
+      <li>
+        <strong>Machine Translation and Multilingual</strong>: I engage in research on domain-adaptive machine translation <a href="#">[TALLIP'26]</a>
+        and the exploration of LLMs as evaluators <a href="https://openreview.net/forum?id=D3V0XAq6Bm" target="_blank">[ICML2025@AIW 2025]</a>; <a href="#">[ICML'26]</a>, as well as human-in-the-loop MT systems <a href="https://arxiv.org/pdf/2310.08908v1.pdf" target="_blank">[MT Summit'23]</a>.
+      </li>
+    </ul>
+
+    <!-- ── News ── -->
+    <h2 class="section-title" id="news">News</h2>
+    <ul class="modern-list">
+      <li><span class="modern-list-date">2026-05-01</span><span class="modern-list-content">One paper accepted by <strong>ICML 2026</strong> as Co-author: <em>UniRRM</em>.</span></li>
+      <li><span class="modern-list-date">2026-04-07</span><span class="modern-list-content">Two papers accepted by <strong>ACL 2026 Main</strong>: <em>DetectRL-X</em> (First-author) and <em>Political Stance Mitigation</em> (Co-author).</span></li>
+      <li><span class="modern-list-date">2026-03-14</span><span class="modern-list-content">One paper accepted by <strong>CVPR 2026 Findings</strong> as Co-author: <em>LongDocSpan</em>.</span></li>
+      <li><span class="modern-list-date">2026-01-27</span><span class="modern-list-content">One paper accepted by <strong>ICLR 2026</strong> as Co-first author: <em>Neuron-Aware Data Selection for LLMs</em>.</span></li>
+      <li><span class="modern-list-date">2026-01-05</span><span class="modern-list-content">One paper accepted by <strong>ACM TALLIP</strong> as Co-author.</span></li>
+      <li><span class="modern-list-date">2025-08-21</span><span class="modern-list-content">Two papers accepted by <strong>EMNLP 2025 Findings</strong> as Co-author. Our CL and TACL papers will also be presented orally at EMNLP 2025.</span></li>
+      <li><span class="modern-list-date">2025-08-01</span><span class="modern-list-content">One paper accepted by <strong>TACL</strong>: <em>RepreGuard</em> (Co-first author).</span></li>
+    </ul>
+
+    <!-- ── Publications ── -->
+    <h2 class="section-title" id="publications">Publications</h2>
+
+    <div class="publications-toolbar">
+      <p class="muted-note">* Equal contribution / co-first author  |  † Corresponding author  |  Citation data from Google Scholar  |  <a href="https://scholar.google.com/citations?user=jhLZtgYAAAAJ" target="_blank" style="font-weight:600;">Full list on Google Scholar</a></p>
+      <div class="paper-toggle">
+        <button class="paper-toggle-btn is-active" data-filter="selected">Selected</button>
+        <button class="paper-toggle-btn" data-filter="category">All (By Category)</button>
+        <button class="paper-toggle-btn" data-filter="year">All (By Year)</button>
+      </div>
+    </div>
+
+    <div class="citation-stats" id="citation-stats" style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:14px;padding:12px 16px;background:linear-gradient(135deg,#f5f3ff,#ede9fe);border-radius:12px;border:1px solid #ddd6fe;font-size:.88rem;">
+      <div><span style="color:#6b7280;">Total Citations</span><br><strong style="font-size:1.2rem;color:#7c3aed;" id="stat-total">—</strong></div>
+      <div><span style="color:#6b7280;">First-Author Citations</span><br><strong style="font-size:1.2rem;color:#7c3aed;" id="stat-first">—</strong></div>
+      <div><span style="color:#6b7280;">h-index</span><br><strong style="font-size:1.2rem;color:#7c3aed;" id="stat-hindex">—</strong></div>
+    </div>
+
+    <div id="published-papers">
+
+      <!-- ICLR 2026 -->
+      <article class="paper-card" data-selected="true" data-year="2026" data-author-rank="2">
+        <div class="paper-image-container">
+          <img src="images/papers/NAIT.png" alt="NAIT">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">Neuron-Aware Data Selection in Instruction Tuning for Large Language Models</div>
+          <div class="paper-authors">Xin Chen*, <strong>Junchao Wu</strong>* (Co-First), Shu Yang, Runzhe Zhan, Zeyu Wu, Min Yang, Shujian Huang, Lidia S. Chao, Derek F. Wong†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">ICLR 2026</span>
+            <span class="ccf-badge">CCF-A</span>
+            
+          </div>
+          <div class="paper-links">
+            <a href="https://openreview.net/forum?id=uq6UWRgzMr" target="_blank" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="#" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ACL 2026 DetectRL-X -->
+      <article class="paper-card" data-selected="true" data-year="2026" data-author-rank="1">
+        <div class="paper-image-container">
+          <img src="images/papers/DetectRL-X.png" alt="DetectRL-X">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">DetectRL-X: Towards Reliable Multilingual and Real-World LLM-Generated Text Detection</div>
+          <div class="paper-authors"><strong>Junchao Wu</strong>, Yefeng Liu, Chenyu Zhu, Hao Zhang, Zeyu Wu, Tianqi Shi, Yichao Du, Longyue Wang, Weihua Luo, Jinsong Su, Derek F. Wong†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">ACL 2026</span>
+            <span class="ccf-badge">CCF-A</span>
+            
+          </div>
+          <div class="paper-links">
+            <a href="https://arxiv.org/abs/2605.15518" target="_blank" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="#" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- RepreGuard TACL -->
+      <article class="paper-card" data-selected="true" data-year="2025" data-author-rank="1">
+        <div class="paper-image-container">
+          <img src="images/papers/repreguard.png" alt="RepreGuard">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">RepreGuard: Detecting LLM-Generated Text by Revealing Hidden Representation Patterns</div>
+          <div class="paper-authors">Xin Chen*, <strong>Junchao Wu</strong>* (Co-First), Shu Yang, Runzhe Zhan, Zeyu Wu, Ziyang Luo, Di Wang, Min Yang, Lidia S. Chao, Derek F. Wong†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">TACL 2025</span>
+            <span class="ccf-badge">CCF-B</span>
+            <span class="sci-q1-badge">SCI Q1</span>
+            
+          </div>
+          <div class="paper-links">
+            <a href="https://arxiv.org/abs/2508.13152" target="_blank" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="https://github.com/NLP2CT/RepreGuard" target="_blank" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- NeurIPS 2024 -->
+      <article class="paper-card" data-selected="true" data-year="2024" data-author-rank="1">
+        <div class="paper-image-container">
+          <img src="images/papers/DetectRL.png" alt="DetectRL">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">DetectRL: Benchmarking LLM-Generated Text Detection in Real-World Scenarios</div>
+          <div class="paper-authors"><strong>Junchao Wu</strong>, Runzhe Zhan, Derek F. Wong†, Shu Yang, Xinyi Yang, Yulin Yuan, Lidia S. Chao</div>
+          <div class="paper-meta">
+            <span class="conf-badge">NeurIPS 2024</span>
+            <span class="ccf-badge">CCF-A</span>
+            
+          </div>
+          <div class="paper-links">
+            <a href="https://openreview.net/forum?id=ZGMkOikEyv" target="_blank" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="https://github.com/NLP2CT/DetectRL" target="_blank" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CL 2024 Survey -->
+      <article class="paper-card" data-selected="true" data-year="2024" data-author-rank="1">
+        <div class="paper-image-container">
+          <img src="images/papers/survey.png" alt="Survey">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">A Survey on LLM-Generated Text Detection: Necessity, Methods, and Future Directions</div>
+          <div class="paper-authors"><strong>Junchao Wu</strong>, Shu Yang, Runzhe Zhan, Yulin Yuan†, Derek F. Wong†, Lidia S. Chao</div>
+          <div class="paper-meta">
+            <span class="conf-badge">Computational Linguistics 2024</span>
+            <span class="ccf-badge">CCF-B</span>
+            <span class="sci-q1-badge">SCI Q1</span>
+            
+          </div>
+          <div class="paper-links">
+            <a href="https://arxiv.org/pdf/2310.14724.pdf" target="_blank" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="https://github.com/NLP2CT/LLM-generated-Text-Detection" target="_blank" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+          <div class="paper-meta" style="margin-top:4px;">
+            <span style="color:#059669;font-weight:600;font-size:.82rem;">Oral Present in EMNLP 2025</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ICML 2026 UniRRM -->
+      <article class="paper-card" data-selected="false" data-year="2026" data-author-rank="3">
+        <div class="paper-image-container">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect fill='%23e9d5ff' width='200' height='120'/%3E%3Ctext x='100' y='66' text-anchor='middle' fill='%237c3aed' font-size='16' font-weight='bold' font-family='serif'%3EICML 2026%3C/text%3E%3C/svg%3E" alt="UniRRM">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">UniRRM: Unified Reasoning Reward Models Across Languages and Evaluation Paradigms</div>
+          <div class="paper-authors">Peng Lai, Yichao Du, <strong>Junchao Wu</strong>, Weibo Gao, Linan Yue, Longyue Wang, Weihua Luo, Derek F. Wong, Guanhua Chen†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">ICML 2026</span>
+            <span class="ccf-badge">CCF-A</span>
+            
+          </div>
+          <div class="paper-links">
+            <a href="#" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="#" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ACL 2026 Political Stance -->
+      <article class="paper-card" data-selected="false" data-year="2026" data-author-rank="3">
+        <div class="paper-image-container">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect fill='%23ede9fe' width='200' height='120'/%3E%3Ctext x='100' y='66' text-anchor='middle' fill='%235b21b6' font-size='13' font-weight='bold' font-family='serif'%3EACL 2026%3C/text%3E%3C/svg%3E" alt="Political Stance">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">Understanding and Mitigating Political Stance Cross-topic Generalization in Large Language Models</div>
+          <div class="paper-authors">Jiayi Zhang, Shu Yang, <strong>Junchao Wu</strong>, Derek F. Wong, Di Wang†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">ACL 2026</span>
+            <span class="ccf-badge">CCF-A</span>
+            
+          </div>
+          <div class="paper-links">
+            <a href="#" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="#" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CVPR 2026 -->
+      <article class="paper-card" data-selected="false" data-year="2026" data-author-rank="3">
+        <div class="paper-image-container">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect fill='%23f3e8ff' width='200' height='120'/%3E%3Ctext x='100' y='66' text-anchor='middle' fill='%237c3aed' font-size='15' font-weight='bold' font-family='serif'%3ECVPR 2026%3C/text%3E%3C/svg%3E" alt="LongDocSpan">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">LongDocSpan: Extending LVLMs for Long Document Understanding</div>
+          <div class="paper-authors">Junwei Liu, Xiong Wang, <strong>Junchao Wu</strong>, Yefeng Liu, Congyun Jin, Jiangwei Lao, Junjie Wang, Derek F. Wong, Zhihong Lu, Jian Wang, Ping Wang†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">CVPR Findings 2026</span>
+            <span class="ccf-badge">CCF-A</span>
+            
+          </div>
+          <div class="paper-links">
+            <a href="#" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="#" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- TALLIP 2026 -->
+      <article class="paper-card" data-selected="false" data-year="2026" data-author-rank="3">
+        <div class="paper-image-container">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect fill='%23f5f3ff' width='200' height='120'/%3E%3Ctext x='100' y='66' text-anchor='middle' fill='%236d28d9' font-size='15' font-weight='bold' font-family='serif'%3ETALLIP 2026%3C/text%3E%3C/svg%3E" alt="TALLIP">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">Domain Adaptive Machine Translation with Synthetic Feedback for Large Language Models</div>
+          <div class="paper-authors">Xinyi Yang, Runzhe Zhan, <strong>Junchao Wu</strong>, Yue Zhang, Xuebo Liu, Yujia Huo, Derek F. Wong†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">ACM TALLIP 2026</span>
+            <span class="ccf-badge">CCF-C</span>
+            
+          </div>
+          <div class="paper-links">
+            <a href="#" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="#" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- COLING 2025 -->
+      <article class="paper-card" data-selected="true" data-year="2025" data-author-rank="1">
+        <div class="paper-image-container">
+          <img src="images/papers/gecscore.png" alt="GECScore">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">Who Wrote This? The Key to Zero-Shot LLM-Generated Text Detection Is GECScore</div>
+          <div class="paper-authors"><strong>Junchao Wu</strong>, Runzhe Zhan, Derek F. Wong†, Shu Yang, Xuebo Liu, Lidia S. Chao, Min Zhang</div>
+          <div class="paper-meta">
+            <span class="conf-badge">COLING 2025</span>
+            <span class="ccf-badge">CCF-B</span>
+            
+          </div>
+          <div class="paper-links">
+            <a href="https://arxiv.org/pdf/2405.04286" target="_blank" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="https://github.com/NLP2CT/GECScore" target="_blank" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- EMNLP 2025 Poetry -->
+      <article class="paper-card" data-selected="false" data-year="2025" data-author-rank="2">
+        <div class="paper-image-container">
+          <img src="images/papers/poetry.png" alt="Chinese Poetry">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">Benchmarking the Detection of LLMs-Generated Modern Chinese Poetry</div>
+          <div class="paper-authors">Shanshan Wang, <strong>Junchao Wu</strong>, Fengying Ye, Jingming Yao, Lidia S. Chao, Derek F. Wong†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">EMNLP Findings 2025</span>
+            <span class="ccf-badge">CCF-B</span>
+            
+          </div>
+          <div class="paper-links">
+            <a href="https://arxiv.org/abs/2509.01620" target="_blank" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="#" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Is Long-to-Short arXiv 2025 -->
+      <article class="paper-card" data-selected="false" data-year="2025" data-author-rank="2">
+        <div class="paper-image-container">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect fill='%23f5f3ff' width='200' height='120'/%3E%3Ctext x='100' y='66' text-anchor='middle' fill='%236d28d9' font-size='13' font-weight='bold' font-family='serif'%3EarXiv 2025%3C/text%3E%3C/svg%3E" alt="Long-to-Short">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">Is Long-to-Short a Free Lunch? Investigating Inconsistency and Reasoning Efficiency in LRMs</div>
+          <div class="paper-authors">Shu Yang, <strong>Junchao Wu</strong>, Xuansheng Wu, Derek F. Wong, Ninhao Liu, Di Wang†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">arXiv (Under Review) 2025</span>
+          </div>
+          <div class="paper-links">
+            <a href="https://arxiv.org/abs/2506.19492" target="_blank" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="#" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Why Do Metrics ICML2025@AIW -->
+      <article class="paper-card" data-selected="false" data-year="2025" data-author-rank="3">
+        <div class="paper-image-container">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect fill='%23ede9fe' width='200' height='120'/%3E%3Ctext x='100' y='66' text-anchor='middle' fill='%235b21b6' font-size='12' font-weight='bold' font-family='serif'%3EICML 2025@AIW%3C/text%3E%3C/svg%3E" alt="Why Do Metrics">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">Why Do Metrics Think That? Towards Understanding Large Language Models as Machine Translation Evaluators</div>
+          <div class="paper-authors">Runzhe Zhan, Xinyi Yang, <strong>Junchao Wu</strong>, Lidia S. Chao, Derek F. Wong†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">ICML 2025 @ AIW 2025</span>
+          </div>
+          <div class="paper-links">
+            <a href="https://openreview.net/forum?id=D3V0XAq6Bm" target="_blank" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="#" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CCL 2025 -->
+      <article class="paper-card" data-selected="false" data-year="2025" data-author-rank="2">
+        <div class="paper-image-container">
+          <img src="images/papers/ccl.png" alt="CCL">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">Overview of CCL25-Eval Task 4: Factivity Inference Evaluation 2025</div>
+          <div class="paper-authors">Guanliang Cong, <strong>Junchao Wu</strong>, Yang Chen, Tianqi Xun, Derek F. Wong, Bin Li, Yulin Yuan†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">CCL 2025</span>
+          </div>
+          <div class="paper-links">
+            <a href="https://aclanthology.org/2025.ccl-2.20/" target="_blank" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="#" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- NLPCC 2025 -->
+      <article class="paper-card" data-selected="false" data-year="2025" data-author-rank="1">
+        <div class="paper-image-container">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect fill='%23ddd6fe' width='200' height='120'/%3E%3Ctext x='100' y='66' text-anchor='middle' fill='%235b21b6' font-size='14' font-weight='bold' font-family='serif'%3ENLPCC 2025%3C/text%3E%3C/svg%3E" alt="NLPCC">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">Overview of the NLPCC 2025 Shared Task 1: LLM-Generated Text Detection</div>
+          <div class="paper-authors"><strong>Junchao Wu</strong>, Runzhe Zhan, Qianli Wang, Yulin Yuan, Lidia S. Chao, Derek F. Wong†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">NLPCC 2025</span>
+            <span class="ccf-badge">CCF-C</span>
+            
+          </div>
+          <div class="paper-links">
+            <a href="https://link.springer.com/chapter/10.1007/978-981-95-3352-7_21" target="_blank" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="#" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Understanding Aha Moments arXiv 2025 -->
+      <article class="paper-card" data-selected="false" data-year="2025" data-author-rank="2">
+        <div class="paper-image-container">
+          <img src="images/papers/ahamoments.png" alt="Aha Moments">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">Understanding Aha Moments: From External Observations to Internal Mechanisms</div>
+          <div class="paper-authors">Shu Yang, <strong>Junchao Wu</strong>, Xin Chen, Yunze Xiao, Xinyi Yang, Derek F. Wong, Di Wang†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">arXiv (Under Review) 2025</span>
+          </div>
+          <div class="paper-links">
+            <a href="https://arxiv.org/abs/2504.02956" target="_blank" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="#" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ACL Findings 2025 Debiasing -->
+      <article class="paper-card" data-selected="false" data-year="2025" data-author-rank="5">
+        <div class="paper-image-container">
+          <img src="images/papers/debiasing.png" alt="Debiasing">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">Rethinking Prompt-based Debiasing in Large Language Models</div>
+          <div class="paper-authors">Xinyi Yang, Runzhe Zhan, Derek F. Wong†, Shu Yang, <strong>Junchao Wu</strong>, Lidia S. Chao</div>
+          <div class="paper-meta">
+            <span class="conf-badge">ACL Findings 2025</span>
+            <span class="ccf-badge">CCF-A</span>
+          </div>
+          <div class="paper-links">
+            <a href="https://arxiv.org/abs/2503.09219" target="_blank" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="#" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Fraud-R1 ACL Findings 2025 -->
+      <article class="paper-card" data-selected="false" data-year="2025" data-author-rank="6">
+        <div class="paper-image-container">
+          <img src="images/papers/fraudr1.png" alt="Fraud-R1">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">Fraud-R1: A Multi-Round Benchmark for Assessing the Robustness of LLM Against Augmented Fraud and Phishing Inducements</div>
+          <div class="paper-authors">Shu Yang, Shenzhe Zhu, Zeyu Wu, Keyu Wang, Junchi Yao, <strong>Junchao Wu</strong>, Lijie Hu, Mengdi Li, Derek F. Wong, Di Wang†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">ACL Findings 2025</span>
+            <span class="ccf-badge">CCF-A</span>
+          </div>
+          <div class="paper-links">
+            <a href="https://arxiv.org/abs/2502.12904" target="_blank" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="#" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- MT Summit 2023 -->
+      <article class="paper-card" data-selected="false" data-year="2023" data-author-rank="4">
+        <div class="paper-image-container">
+          <img src="images/papers/mtsummit.png" alt="MT Summit">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">Human-in-the-loop Machine Translation with Large Language Model</div>
+          <div class="paper-authors">Xinyi Yang, Runzhe Zhan, Derek F. Wong†, <strong>Junchao Wu</strong>, Lidia S. Chao</div>
+          <div class="paper-meta">
+            <span class="conf-badge">MT Summit 2023</span>
+          </div>
+          <div class="paper-links">
+            <a href="https://arxiv.org/pdf/2310.08908v1.pdf" target="_blank" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="https://github.com/nlp2ct/hil-mt" target="_blank" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ICEIT 2021 -->
+      <article class="paper-card" data-selected="false" data-year="2021" data-author-rank="1">
+        <div class="paper-image-container">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect fill='%23ede9fe' width='200' height='120'/%3E%3Ctext x='100' y='66' text-anchor='middle' fill='%235b21b6' font-size='14' font-weight='bold' font-family='serif'%3EICEIT 2021%3C/text%3E%3C/svg%3E" alt="ICEIT">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">The Canton Canon Digital Library Based on Knowledge Graph</div>
+          <div class="paper-authors"><strong>Junchao Wu</strong>, Ying Jiang†, Xin Chen, Lingyu Guo, Xiaotong Wei, Xiaoyan Yang</div>
+          <div class="paper-meta">
+            <span class="conf-badge">ICEIT 2021</span>
+          </div>
+          <div class="paper-links">
+            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9375538" target="_blank" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="https://github.com/junchaoIU/CMRH-KG" target="_blank" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+          <div class="paper-meta" style="margin-top:4px;">
+            <span style="color:#059669;font-weight:600;font-size:.82rem;">Best Oral Presentation Award (5/57)</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- ── Internships ── -->
+    <h2 class="section-title" id="internships">Internships</h2>
+
+    <div class="exp-card">
+      <div class="exp-header">
+        <span class="exp-title">LLM Research Intern</span>
+        <span class="exp-date">Feb. 2026 – Present</span>
+      </div>
+      <div class="exp-org"><img class="exp-logo" src="images/alibaba.ico" alt="">Alibaba Cloud, Alibaba Group</div>
+      <div class="exp-desc">Supervised by <a href="https://duyichao.github.io/" target="_blank">Yichao Du</a> and <a href="https://www.longyuewang.com/" target="_blank">Longyue Wang</a>.</div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-header">
+        <span class="exp-title">LLM Research Intern</span>
+        <span class="exp-date">Jul. 2025 – Jan. 2026</span>
+      </div>
+      <div class="exp-org"><img class="exp-logo" src="images/alibaba-intl.png" alt="">Alibaba International, Alibaba Group</div>
+      <div class="exp-desc">Supervised by <a href="https://openreview.net/profile?id=~Yefeng_Liu4" target="_blank">Yefeng Liu</a> and <a href="https://www.longyuewang.com/" target="_blank">Longyue Wang</a>.</div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-header">
+        <span class="exp-title">Visiting Research Student</span>
+        <span class="exp-date">Mar. 2025 – Jun. 2025</span>
+      </div>
+      <div class="exp-org"><img class="exp-logo" src="images/kaust.ico" alt="">PRADA Lab, King Abdullah University of Science and Technology (KAUST)</div>
+      <div class="exp-desc">Supervised by <a href="https://shao3wangdi.github.io/" target="_blank">Prof. Di Wang</a>.</div>
+    </div>
+
+    <!-- ── Education ── -->
+    <h2 class="section-title" id="education">Education</h2>
+
+    <div class="exp-card">
+      <div class="exp-header">
+        <span class="exp-title">Ph.D. in Computer Science</span>
+        <span class="exp-date">2024 – Present</span>
+      </div>
+      <div class="exp-org"><img class="exp-logo" src="images/umac.ico" alt="">University of Macau</div>
+      <div class="exp-desc">NLP2CT Lab, advised by Prof. Derek F. Wong.</div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-header">
+        <span class="exp-title">M.S. in Data Science (Computational Linguistics)</span>
+        <span class="exp-date">2022 – 2024</span>
+      </div>
+      <div class="exp-org"><img class="exp-logo" src="images/umac.ico" alt="">University of Macau</div>
+      <div class="exp-desc">NLP2CT Lab, co-advised by Prof. Derek F. Wong and Prof. Yulin Yuan.</div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-header">
+        <span class="exp-title">B.S. in Computer Science</span>
+        <span class="exp-date">2018 – 2022</span>
+      </div>
+      <div class="exp-org"><img class="exp-logo" src="images/bnuzh.png" alt="">Beijing Normal University, Zhuhai</div>
+    </div>
+
+    <!-- ── Professional Skills ── -->
+    <h2 class="section-title" id="skills">Professional Skills</h2>
+
+    <div class="chip-group">
+      <div class="chip-label">Programming Languages</div>
+      <span class="chip">Python</span><span class="chip">C</span><span class="chip">Java</span><span class="chip">JavaScript</span><span class="chip">SQL</span><span class="chip">Bash</span>
+    </div>
+
+    <div class="chip-group">
+      <div class="chip-label">Frameworks</div>
+      <span class="chip">SpringBoot</span><span class="chip">React.js</span><span class="chip">Flask</span>
+    </div>
+
+    <div class="chip-group">
+      <div class="chip-label">Deep Learning Tools</div>
+      <span class="chip">PyTorch</span><span class="chip">Transformers</span><span class="chip">Scikit-learn</span><span class="chip">Fairseq</span><span class="chip">LLaMA-Factory</span><span class="chip">veRL</span>
+    </div>
+
+    <div class="chip-group">
+      <div class="chip-label">Databases &amp; Tools</div>
+      <span class="chip">MySQL</span><span class="chip">Oracle DB</span><span class="chip">Neo4j</span><span class="chip">Git</span><span class="chip">Apache Ant</span>
+    </div>
+
+    <div class="chip-group">
+      <div class="chip-label">English Proficiency</div>
+      <span class="chip">IELTS 6.5</span><span class="chip">CET-6 507</span>
+    </div>
+
+    <!-- ── Services ── -->
+    <h2 class="section-title" id="services">Services</h2>
+
+    <div class="chip-group">
+      <div class="chip-label">Conference Reviewer</div>
+      <span class="chip">ACL ARR</span><span class="chip">ICML</span><span class="chip">ICLR</span><span class="chip">NeurIPS</span><span class="chip">AAAI</span><span class="chip">CVPR</span><span class="chip">COLM</span><span class="chip">CCL</span><span class="chip">NLPCC</span>
+    </div>
+
+    <div class="chip-group">
+      <div class="chip-label">Journal Reviewer</div>
+      <span class="chip">Proc. IEEE</span><span class="chip">ACM Computing Surveys</span><span class="chip">IEEE TIFS</span><span class="chip">ACM TALLIP</span><span class="chip">ACM TIST</span>
+    </div>
+
+    <div class="chip-group">
+      <div class="chip-label">Teaching Assistant</div>
+      <span class="chip">Computational Linguistics (MSc) programme (2023 Fall)</span><span class="chip">AHGC7315 Language and Linguistics (2023 Spring)</span>
+    </div>
+
+    <!-- ── Others ── -->
+    <h2 class="section-title" id="others">Others</h2>
+    <p style="margin-bottom:12px;color:var(--secondary-text);">Thanks to all the brilliant mentors, collaborators, and loved ones in my life.</p>
+    <ul class="modern-list">
+      <li><a href="https://www.fst.um.edu.mo/personal/derek-wong/" target="_blank">Prof. Derek F. Wong</a> and <a href="https://fah.um.edu.mo/yuan-yulin/" target="_blank">Prof. Yulin Yuan</a> are my advisors at University of Macau. They are my guides — I am forever grateful for their quiet support and all the academic help they have given me.</li>
+      <li><a href="https://runzhe.me/" target="_blank">Runzhe Zhan</a> is my mentor at NLP2CT Lab during my M.S. and Ph.D. He is a brilliant scientist and one of the nicest people I have ever met.</li>
+      <li><a href="https://duyichao.github.io/" target="_blank">Yichao Du</a>, <a href="https://openreview.net/profile?id=~Yefeng_Liu4" target="_blank">Yefeng Liu</a>, and <a href="https://www.longyuewang.com/" target="_blank">Longyue Wang</a> are my mentors during my internships at Alibaba Group. They are great seniors, brothers, and I am deeply grateful for their care and support.</li>
+      <li><a href="https://chen-x666.github.io/" target="_blank">Xin Chen</a> is my undergraduate roommate and one of my best friends, who is presently a Ph.D. student at Nanjing University and is also committed to NLP research. He has many interesting dreams.</li>
+      <li><a href="https://kenchan.space/" target="_blank">Guanhua Chen</a>, <a href="https://openreview.net/profile?id=~Yutong_Yao2" target="_blank">Yutong Yao</a>, and <a href="https://sudanl.github.io/" target="_blank">Shudong Liu</a> are my Ph.D. fellows at NLP2CT Lab. We often discuss research over meals together — brothers forever in our hearts.</li>
+      <li><a href="https://scholar.google.com/citations?user=RrKb-9oAAAAJ&hl=zh-CN" target="_blank">Shu Yang</a> and <a href="https://scholar.google.com/citations?user=bV98xhEAAAAJ&hl=zh-CN" target="_blank">Xinyi Yang</a> are my M.S. labmates and classmates in Computational Linguistics at University of Macau, now Ph.D. students at KAUST and Shenzhen University of Advanced Technology respectively. They are both hardworking, eager to learn, and full of academic talent. We have maintained great research collaborations.</li>
+      <li><a href="https://laip11.github.io/" target="_blank">Peng Lai</a> is my colleague during my internship at Alibaba Group, a Ph.D. student at Southern University of Science and Technology. He is incredibly humble, highly capable, and a rising star in academia.</li>
+      <li>❤️ Qiufeng He, the love of my life and the best gift life has given me. A brilliant Assistant Professor in Engineering Management at Shenzhen University, and we dream to write the future of AI + Civil Engineering together. With her, everything matters, and everything awaits.</li>
+    </ul>
+
+  </main>
+</div>
+
+<script>
+function initNavObserver() {
+  const navLinks = Array.from(document.querySelectorAll(".sidebar-nav a, .mobile-nav a"));
+  const sectionMap = new Map();
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!sectionMap.has(href)) sectionMap.set(href, []);
+    sectionMap.get(href).push(link);
+  });
+  const sections = [...sectionMap.keys()]
+    .map((href) => document.querySelector(href))
+    .filter(Boolean);
+
+  if (sections.length === 0) return;
+
+  let observer = null;
+
+  const setActiveSection = (id) => {
+    if (!id) return;
+    navLinks.forEach((link) => link.classList.remove("active"));
+    const activeLinks = sectionMap.get("#" + id) || [];
+    activeLinks.forEach((link) => link.classList.add("active"));
+  };
+
+  const getObserverOptions = () => {
+    const mobileNav = document.querySelector(".mobile-nav");
+    const stickyOffset =
+      mobileNav && getComputedStyle(mobileNav).display !== "none"
+        ? mobileNav.getBoundingClientRect().height + 12
+        : 0;
+    const top = Math.round(window.innerHeight * 0.22 + stickyOffset);
+    const bottom = Math.round(window.innerHeight * 0.42);
+    return {
+      rootMargin: "-" + top + "px 0px -" + bottom + "px 0px",
+      threshold: [0, 0.12, 0.35, 0.6],
+    };
+  };
+
+  const bindObserver = () => {
+    if (observer) observer.disconnect();
+    observer = new IntersectionObserver((entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (visible) setActiveSection(visible.target.id);
+    }, getObserverOptions());
+    sections.forEach((section) => observer.observe(section));
+  };
+
+  bindObserver();
+
+  let resizeTimer;
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(bindObserver, 120);
+  });
+}
+
+function getPaperFilterFromHash() {
+  var h = window.location.hash;
+  if (h === "#publications-category") return "category";
+  if (h === "#publications-year") return "year";
+  return "selected";
+}
+
+function updatePaperHash(filter) {
+  var newHash = "#publications";
+  if (filter === "category") newHash = "#publications-category";
+  else if (filter === "year") newHash = "#publications-year";
+  if (window.location.hash !== newHash) {
+    history.replaceState(null, "", newHash);
+  }
+}
+
+function initPaperToggle() {
+  var container = document.getElementById("published-papers");
+  var buttons = Array.from(document.querySelectorAll(".paper-toggle-btn"));
+  if (!container || buttons.length === 0) return;
+
+var catMap = {
+    "Neuron-Aware Data Selection in Instruction Tuning for Large Language Models": "tuning",
+    "DetectRL-X: Towards Reliable Multilingual and Real-World LLM-Generated Text Detection": "detection",
+    "RepreGuard: Detecting LLM-Generated Text by Revealing Hidden Representation Patterns": "detection",
+    "DetectRL: Benchmarking LLM-Generated Text Detection in Real-World Scenarios": "detection",
+    "A Survey on LLM-Generated Text Detection: Necessity, Methods, and Future Directions": "detection",
+    "UniRRM: Unified Reasoning Reward Models Across Languages and Evaluation Paradigms": "mt",
+    "Understanding and Mitigating Political Stance Cross-topic Generalization in Large Language Models": "explainability",
+    "LongDocSpan: Extending LVLMs for Long Document Understanding": "other",
+    "Domain Adaptive Machine Translation with Synthetic Feedback for Large Language Models": "mt",
+    "Who Wrote This? The Key to Zero-Shot LLM-Generated Text Detection Is GECScore": "detection",
+    "Benchmarking the Detection of LLMs-Generated Modern Chinese Poetry": "detection",
+    "Is Long-to-Short a Free Lunch? Investigating Inconsistency and Reasoning Efficiency in LRMs": "tuning",
+    "Why Do Metrics Think That? Towards Understanding Large Language Models as Machine Translation Evaluators": "mt",
+    "Overview of CCL25-Eval Task 4: Factivity Inference Evaluation 2025": "detection",
+    "Overview of the NLPCC 2025 Shared Task 1: LLM-Generated Text Detection": "detection",
+    "Understanding Aha Moments: From External Observations to Internal Mechanisms": "tuning",
+    "Rethinking Prompt-based Debiasing in Large Language Models": "explainability",
+    "Fraud-R1: A Multi-Round Benchmark for Assessing the Robustness of LLM Against Augmented Fraud and Phishing Inducements": "explainability",
+    "Human-in-the-loop Machine Translation with Large Language Model": "mt",
+    "The Canton Canon Digital Library Based on Knowledge Graph": "other"
+  };
+
+  var catLabels = {
+    "detection": "LLM-Generated Text Detection &amp; Benchmarking",
+    "tuning": "Efficient &amp; Controllable LLM Tuning &amp; Reasoning",
+    "explainability": "Interpretability &amp; Safety",
+    "mt": "Machine Translation &amp; Multilingual",
+    "other": "Other Publications"
+  };
+
+  var catOrder = ["detection", "tuning", "explainability", "mt", "other"];
+
+  function sortPaperCards(container, filter) {
+    var catTitles = {};
+    var cards = Array.from(container.querySelectorAll(".paper-card"));
+    cards.forEach(function(c) {
+      var t = (c.querySelector(".paper-title") || {}).textContent || "";
+      var cat = catMap[t] || "other";
+      c.dataset._cat = cat;
+      if (!catTitles[cat]) catTitles[cat] = [];
+      catTitles[cat].push(c);
+    });
+    var sorted = [];
+    if (filter === "year") {
+      var allYears = {};
+      cards.forEach(function(c) {
+        var y = c.dataset.year;
+        if (!allYears[y]) allYears[y] = [];
+        allYears[y].push(c);
+      });
+      var sortedYearKeys = Object.keys(allYears).sort(function(a, b) { return Number(b) - Number(a); });
+      sortedYearKeys.forEach(function(y) {
+        allYears[y].forEach(function(c) { sorted.push(c); });
+      });
+    } else {
+      catOrder.forEach(function(cat) {
+        var group = catTitles[cat] || [];
+        group.sort(function(a, b) {
+          var yrA = Number(a.dataset.year) || 0;
+          var yrB = Number(b.dataset.year) || 0;
+          if (yrA !== yrB) return yrB - yrA;
+          var rA = Number(a.dataset.authorRank) || 99;
+          var rB = Number(b.dataset.authorRank) || 99;
+          return rA - rB;
+        });
+        group.forEach(function(c) { sorted.push(c); });
+      });
+    }
+    sorted.forEach(function(card) { container.appendChild(card); });
+  }
+
+  function ensureHeadings(filter) {
+    var allCards = Array.from(container.querySelectorAll(".paper-card"));
+    var headings = container.querySelectorAll(".pub-cat-heading, .pub-year-heading");
+    headings.forEach(function(h) { h.remove(); });
+
+    if (filter === "year") {
+      var lastYear = null;
+      allCards.forEach(function(c) {
+        var y = c.dataset.year;
+        if (y !== lastYear) {
+          lastYear = y;
+          var h = document.createElement("h3");
+          h.className = "pub-year-heading";
+          h.textContent = y;
+          h.style.cssText = "font-size:1.1rem;font-weight:700;color:#7c3aed;margin:20px 0 10px;padding-bottom:4px;border-bottom:1px dashed #ddd6fe;clear:both;";
+          c.parentNode.insertBefore(h, c);
+        }
+      });
+    } else if (filter === "category") {
+      var lastCat = null;
+      allCards.forEach(function(c) {
+        var cat = c.dataset._cat || "other";
+        if (cat !== lastCat) {
+          lastCat = cat;
+          var h = document.createElement("h3");
+          h.className = "pub-cat-heading";
+          h.innerHTML = catLabels[cat] || cat;
+          h.style.cssText = "font-size:1.1rem;font-weight:700;color:#7c3aed;margin:20px 0 10px;padding-bottom:4px;border-bottom:1px dashed #ddd6fe;clear:both;";
+          c.parentNode.insertBefore(h, c);
+        }
+      });
+    }
+  }
+
+  var setFilter = function(filter, updateHash) {
+    updateHash = updateHash !== false;
+    if (filter === "selected") {
+      container.classList.add("is-selected-only");
+    } else {
+      container.classList.remove("is-selected-only");
+      sortPaperCards(container, filter);
+      ensureHeadings(filter);
+    }
+    buttons.forEach(function(button) {
+      var active = button.dataset.filter === filter;
+      button.classList.toggle("is-active", active);
+      button.setAttribute("aria-selected", active ? "true" : "false");
+    });
+    if (updateHash) updatePaperHash(filter);
+  };
+
+  buttons.forEach(function(button) {
+    button.addEventListener("click", function() { setFilter(button.dataset.filter); });
+  });
+
+  setFilter(getPaperFilterFromHash(), false);
+
+  window.addEventListener("hashchange", function() {
+    setFilter(getPaperFilterFromHash(), false);
+  });
+}
+
+async function loadCitationStats() {
+  try {
+    var GS_USER = "jhLZtgYAAAAJ";
+    var proxyBase = "https://corsproxy.io/?";
+    var statsUrl = proxyBase + encodeURIComponent("https://scholar.google.com/citations?user=" + GS_USER + "&hl=en");
+    var papersUrl = proxyBase + encodeURIComponent("https://scholar.google.com/citations?user=" + GS_USER + "&hl=en&cstart=0&pagesize=200&sortby=pubdate");
+
+    var [statsResp, papersResp] = await Promise.all([
+      fetch(statsUrl),
+      fetch(papersUrl)
+    ]);
+    var statsHtml = await statsResp.text();
+    var papersHtml = await papersResp.text();
+
+    var totalMatch = statsHtml.match(/<td class="gsc_rsb_std">([\d]+)<\/td>/);
+    if (totalMatch) {
+      document.getElementById("stat-total").textContent = totalMatch[1];
+    }
+
+    var hIndexMatch = statsHtml.match(/<td class="gsc_rsb_std">([\d]+)<\/td>\s*<\/tr>\s*<tr>\s*<td class="gsc_rsb_std">([\d]+)<\/td>/);
+    if (hIndexMatch) {
+      document.getElementById("stat-hindex").textContent = hIndexMatch[2];
+    }
+
+    var gsPapers = {};
+    var rows = papersHtml.match(/<tr class="gsc_a_tr">[\s\S]*?<\/tr>/g);
+    if (rows) {
+      rows.forEach(function(row) {
+        var titleMatch = row.match(/<a[^>]*class="gsc_a_at"[^>]*>([^<]+)<\/a>/);
+        var citeMatch = row.match(/<a[^>]*class="gsc_a_ac[^"]*"[^>]*>([^<]+)<\/a>/);
+        var authorMatch = row.match(/<div class="gs_gray">([^<]+)<\/div>/);
+        if (titleMatch && citeMatch) {
+          var gsTitle = titleMatch[1].trim().toLowerCase().replace(/[^a-z0-9 ]/g, "").replace(/\s+/g, " ").trim();
+          var citeCount = parseInt(citeMatch[1]) || 0;
+          gsPapers[gsTitle] = citeCount;
+          if (authorMatch) {
+            var firstAuthor = authorMatch[1].trim().split(",")[0].trim().toLowerCase();
+            if (firstAuthor.indexOf("wu j") === 0 || firstAuthor.indexOf("wu junchao") > -1) {
+              gsPapers[gsTitle + "__first__"] = citeCount;
+            }
+          }
+        }
+      });
+    }
+
+    document.getElementById("stat-first").textContent = Object.keys(gsPapers).filter(function(k) { return k.endsWith("__first__"); }).reduce(function(acc, k) { return acc + gsPapers[k]; }, 0) || "—";
+
+    var cards = document.querySelectorAll(".paper-card");
+    cards.forEach(function(card) {
+      var titleEl = card.querySelector(".paper-title");
+      if (!titleEl) return;
+      var cardTitle = (titleEl.textContent || "").trim().toLowerCase().replace(/[^a-z0-9 ]/g, "").replace(/\s+/g, " ").trim();
+      var citeCount = gsPapers[cardTitle];
+      if (citeCount !== undefined) {
+        var badge = document.createElement("span");
+        badge.className = "gs-cite-badge";
+        badge.textContent = "Cited by " + citeCount;
+        var meta = card.querySelector(".paper-meta");
+        if (meta) meta.appendChild(badge);
+      }
+    });
+  } catch(e) {
+    console.log("GS citation stats unavailable via proxy");
+  }
+}
+
+initPaperToggle();
+loadCitationStats();
+initNavObserver();
+
+/* Sakura petals */
+(function() {
+  var petals = [];
+  var maxPetals = 28;
+  var container = document.createElement("div");
+  container.style.cssText = "position:fixed;inset:0;pointer-events:none;z-index:9999;overflow:hidden;";
+  document.body.appendChild(container);
+
+  var colors = ["#ffb7c5","#ffc0cb","#ffd1dc","#f8bbd0","#fce4ec","#f3e5f5","#e8eaf6"];
+  var head = document.head || document.getElementsByTagName("head")[0];
+
+  function createPetal() {
+    var el = document.createElement("div");
+    var size = 10 + Math.random() * 14;
+    var left = Math.random() * 100;
+    var duration = 8 + Math.random() * 14;
+    var delay = Math.random() * 15;
+    var rot = Math.random() * 360;
+    var drift = (Math.random() * 100 - 50);
+    var color = colors[Math.floor(Math.random() * colors.length)];
+    var name = "sakura" + Date.now() + Math.floor(Math.random() * 9999);
+
+    el.style.cssText = [
+      "position:absolute",
+      "top:-30px",
+      "left:" + left + "%",
+      "width:" + size + "px",
+      "height:" + size + "px",
+      "background:" + color,
+      "border-radius:40% 60% 50% 50%",
+      "opacity:0.85",
+      "transform:rotate(" + rot + "deg)",
+      "animation:" + name + " " + duration + "s " + delay + "s linear infinite"
+    ].join(";");
+
+    var sheet = document.createElement("style");
+    sheet.textContent = [
+      "@keyframes " + name + " {",
+      "  0% { transform:translateY(0) rotate(" + rot + "deg) translateX(0); opacity:0; }",
+      "  5% { opacity:0.85; }",
+      "  25% { transform:translateY(25vh) translateX(" + (drift * 0.3) + "px) rotate(" + (rot + 90) + "deg); }",
+      "  50% { transform:translateY(55vh) translateX(" + (drift * 0.8) + "px) rotate(" + (rot + 200) + "deg); }",
+      "  75% { transform:translateY(78vh) translateX(" + drift + "px) rotate(" + (rot + 290) + "deg); }",
+      "  95% { opacity:0.5; }",
+      "  100% { transform:translateY(105vh) translateX(" + (drift * 1.5) + "px) rotate(" + (rot + 360) + "deg); opacity:0; }",
+      "}"
+    ].join("");
+
+    head.appendChild(sheet);
+    container.appendChild(el);
+
+    setTimeout(function() {
+      el.remove();
+      sheet.remove();
+    }, (duration + delay + 2) * 1000);
+
+    return { el: el, sheet: sheet };
+  }
+
+  for (var i = 0; i < maxPetals; i++) {
+    petals.push(createPetal());
+  }
+
+  setInterval(function() {
+    petals.push(createPetal());
+  }, 2500);
+})();
+</script>
+
+</body>
+</html>
