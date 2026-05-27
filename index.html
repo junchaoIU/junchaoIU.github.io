@@ -99,13 +99,11 @@
     .sidebar-nav a:hover {
       color: var(--accent-color);
       background: rgba(255, 255, 255, 0.7);
-      text-decoration: none;
     }
 
     .sidebar-nav a.active {
       color: #fff;
       background: var(--accent-color);
-      text-decoration: none;
     }
 
     /* ── Mobile Navigation ── */
@@ -243,6 +241,15 @@
 
     a { color: var(--link-color); text-decoration: none; }
     a:hover { text-decoration: underline; }
+
+    .content a { text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; text-decoration-color: var(--accent-border); }
+    .content a:hover { text-decoration-thickness: 2px; text-decoration-color: var(--accent-color); }
+    .content .paper-btn,
+    .content .paper-btn:hover,
+    .content .quick-link,
+    .content .quick-link:hover,
+    .content .chip a,
+    .content .chip a:hover { text-decoration: none; }
 
     /* ── Section Title ── */
     .section-title {
@@ -1672,6 +1679,10 @@ initNavObserver();
   }, 2500);
 })();
 </script>
+
+<div style="text-align:center;padding:32px 16px 16px;font-size:.82rem;color:#9ca3af;line-height:1.8;">
+  <p>© 2026 Junchao Wu  ·  Powered by Coffee ☕, Sakura 🌸, and way too many NeurIPS deadlines.</p>
+</div>
 
 </body>
 </html>
