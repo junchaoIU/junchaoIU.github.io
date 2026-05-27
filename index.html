@@ -1538,89 +1538,30 @@ var catMap = {
 }
 
 async function loadCitationStats() {
-  var GS_USER = "jhLZtgYAAAAJ";
-  var proxies = [
-    "https://corsproxy.io/?",
-    "https://api.allorigins.win/raw?url=",
-    "https://api.codetabs.com/v1/proxy?quest="
-  ];
+  try {
+    var resp = await fetch("data/citations.json");
+    var data = await resp.json();
+    document.getElementById("stat-total").textContent = data.totalCitations || "—";
+    document.getElementById("stat-hindex").textContent = data.hIndex || "—";
+    document.getElementById("stat-first").textContent = data.firstAuthorCitations || "—";
 
-  var statsHtml = null;
-  var papersHtml = null;
-
-  for (var p = 0; p < proxies.length; p++) {
-    try {
-      var statsUrl = proxies[p] + encodeURIComponent("https://scholar.google.com/citations?user=" + GS_USER + "&hl=en");
-      var papersUrl = proxies[p] + encodeURIComponent("https://scholar.google.com/citations?user=" + GS_USER + "&hl=en&cstart=0&pagesize=200&sortby=pubdate");
-
-      var [sr, pr] = await Promise.all([
-        fetch(statsUrl, { signal: AbortSignal.timeout(8000) }),
-        fetch(papersUrl, { signal: AbortSignal.timeout(8000) })
-      ]);
-      statsHtml = await sr.text();
-      papersHtml = await pr.text();
-      if (statsHtml.indexOf("gsc_rsb_std") > -1 && papersHtml.indexOf("gsc_a_tr") > -1) {
-        break;
-      }
-      statsHtml = null; papersHtml = null;
-    } catch(e) {}
-  }
-
-  if (!statsHtml || !papersHtml) {
-    document.getElementById("stat-total").textContent = "N/A";
-    document.getElementById("stat-first").textContent = "N/A";
-    document.getElementById("stat-hindex").textContent = "N/A";
-    return;
-  }
-
-  var totalMatch = statsHtml.match(/<td class="gsc_rsb_std">([\d]+)<\/td>/);
-  if (totalMatch) {
-    document.getElementById("stat-total").textContent = totalMatch[1];
-  }
-
-  var hStd = statsHtml.match(/<td class="gsc_rsb_std">[\d]+<\/td>/g);
-  if (hStd && hStd.length >= 2) {
-    var hVal = hStd[1].match(/[\d]+/);
-    if (hVal) document.getElementById("stat-hindex").textContent = hVal[0];
-  }
-
-  var gsPapers = {};
-  var rows = papersHtml.match(/<tr class="gsc_a_tr">[\s\S]*?<\/tr>/g);
-  if (rows) {
-    rows.forEach(function(row) {
-      var titleMatch = row.match(/<a[^>]*class="gsc_a_at"[^>]*>([^<]+)<\/a>/);
-      var citeMatch = row.match(/<a[^>]*class="gsc_a_ac[^"]*"[^>]*>([^<]+)<\/a>/);
-      var authorMatch = row.match(/<div class="gs_gray">([^<]+)<\/div>/);
-      if (titleMatch && citeMatch) {
-        var gsTitle = titleMatch[1].trim().toLowerCase().replace(/[^a-z0-9 ]/g, "").replace(/\s+/g, " ").trim();
-        var citeCount = parseInt(citeMatch[1]) || 0;
-        gsPapers[gsTitle] = citeCount;
-        if (authorMatch) {
-          var firstAuthor = authorMatch[1].trim().split(",")[0].trim().toLowerCase();
-          if (firstAuthor.indexOf("wu j") === 0 || firstAuthor.indexOf("wu junchao") > -1) {
-            gsPapers[gsTitle + "__first__"] = citeCount;
-          }
-        }
+    var cards = document.querySelectorAll(".paper-card");
+    cards.forEach(function(card) {
+      var titleEl = card.querySelector(".paper-title");
+      if (!titleEl) return;
+      var cardTitle = (titleEl.textContent || "").trim();
+      var citeCount = data.papers[cardTitle];
+      if (citeCount !== undefined) {
+        var badge = document.createElement("span");
+        badge.className = "gs-cite-badge";
+        badge.textContent = "Cited by " + citeCount;
+        var meta = card.querySelector(".paper-meta");
+        if (meta) meta.appendChild(badge);
       }
     });
+  } catch(e) {
+    console.log("Citation data unavailable");
   }
-
-  document.getElementById("stat-first").textContent = Object.keys(gsPapers).filter(function(k) { return k.endsWith("__first__"); }).reduce(function(acc, k) { return acc + gsPapers[k]; }, 0) || "—";
-
-  var cards = document.querySelectorAll(".paper-card");
-  cards.forEach(function(card) {
-    var titleEl = card.querySelector(".paper-title");
-    if (!titleEl) return;
-    var cardTitle = (titleEl.textContent || "").trim().toLowerCase().replace(/[^a-z0-9 ]/g, "").replace(/\s+/g, " ").trim();
-    var citeCount = gsPapers[cardTitle];
-    if (citeCount !== undefined) {
-      var badge = document.createElement("span");
-      badge.className = "gs-cite-badge";
-      badge.textContent = "Cited by " + citeCount;
-      var meta = card.querySelector(".paper-meta");
-      if (meta) meta.appendChild(badge);
-    }
-  });
 }
 
 initPaperToggle();
