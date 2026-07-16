@@ -664,6 +664,59 @@
       border: 1px solid var(--accent-border);
     }
 
+    /* ── Tool Cards ── */
+    .tool-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin-bottom: 14px;
+      transition: all 0.25s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    }
+
+    .tool-card:hover {
+      box-shadow: 0 10px 28px rgba(124, 58, 237, 0.10);
+      transform: translateY(-3px);
+      border-color: var(--accent-border);
+    }
+
+    .tool-icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent-bg);
+      border-radius: 12px;
+      border: 1px solid var(--accent-border);
+    }
+
+    .tool-info { flex: 1; display: flex; flex-direction: column; gap: 6px; }
+
+    .tool-name {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary-text);
+    }
+
+    .tool-desc {
+      font-size: 0.88rem;
+      color: #6b7280;
+      line-height: 1.55;
+    }
+
+    .tool-links {
+      display: flex;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
     /* ── Responsive ── */
     @media (max-width: 768px) {
       .paper-card { flex-direction: column; align-items: flex-start; padding: 14px; gap: 12px; }
@@ -675,6 +728,8 @@
       .exp-header { flex-direction: column; align-items: flex-start; gap: 12px; }
       .quick-links { margin-top: 8px; }
       .publications-toolbar .paper-toggle { width: 100%; justify-content: flex-end; }
+      .tool-card { flex-direction: column; align-items: flex-start; }
+      .tool-icon { width: 40px; height: 40px; font-size: 1.5rem; }
     }
 
     @media (max-width: 1440px) {
@@ -701,6 +756,7 @@
       <li><a href="#education">Education</a></li>
       <li><a href="#skills">Professional Skills</a></li>
       <li><a href="#services">Services</a></li>
+      <li><a href="#tools">Tools</a></li>
     </ul>
   </aside>
 
@@ -731,6 +787,7 @@
       <a href="#education">Education</a>
       <a href="#skills">Professional Skills</a>
       <a href="#services">Services</a>
+      <a href="#tools">Tools</a>
     </nav>
 
     <!-- ── About ── -->
@@ -1323,6 +1380,22 @@
       <span class="chip"><a href="https://nlp2ct.github.io/NLPCC-2026-Task10-Science/" target="_blank" style="color:inherit;">NLPCC 2026 Task 10</a>: Reliability of AI-Assisted Scientific Reporting</span>
       <span class="chip"><a href="https://github.com/UM-FAH-Yuan/FIE2026" target="_blank" style="color:inherit;">CCL26-Eval Task 1</a>: Factivity Inference Evaluation 2026 (FIE2026)</span>
       <span class="chip"><a href="https://github.com/Throde/NLPCC2026-Task8-FIIA" target="_blank" style="color:inherit;">NLPCC 2026 Task 8</a>: Factivity Inference Inconsistency Attack (FIIA)</span>
+    </div>
+
+    <!-- ── Tools ── -->
+    <h2 class="section-title" id="tools">Tools</h2>
+    <p class="lead" style="margin-bottom:14px;">Some small tools and projects I built for research and daily use.</p>
+
+    <div class="tool-card">
+      <div class="tool-icon">📚</div>
+      <div class="tool-info">
+        <div class="tool-name">NLPDaily — arxiv NLP 每日速递</div>
+        <div class="tool-desc">An academic assistant that curates and delivers daily arXiv NLP paper highlights, helping researchers stay up-to-date with the latest developments.</div>
+        <div class="tool-links">
+          <a href="https://junchaoiu.github.io/NLPDaily/" target="_blank" class="paper-btn paper-btn-primary">Visit</a>
+          <a href="https://github.com/junchaoIU/NLPDaily" target="_blank" class="paper-btn paper-btn-secondary">GitHub</a>
+        </div>
+      </div>
     </div>
 
     <!-- ── Others ── -->
