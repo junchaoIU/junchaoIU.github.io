@@ -39,12 +39,23 @@ def normalize(s):
 
 
 def title_match(gs_title, homepage_title):
+    """Match by checking if one title contains the other as substring (after normalization)."""
+    gs_norm = " ".join(normalize(gs_title))
+    hp_norm = " ".join(normalize(homepage_title))
+    if not gs_norm or not hp_norm:
+        return False
+    # Exact match (normalized)
+    if gs_norm == hp_norm:
+        return True
+    # Substring containment (one is prefix of the other)
+    if gs_norm in hp_norm or hp_norm in gs_norm:
+        return True
+    # Word overlap >= 80% of the shorter title
     gs_words = set(normalize(gs_title))
     hp_words = set(normalize(homepage_title))
-    if not gs_words or not hp_words:
-        return False
     overlap = len(gs_words & hp_words)
-    return overlap / min(len(gs_words), len(hp_words)) >= 0.6
+    shorter = min(len(gs_words), len(hp_words))
+    return shorter > 0 and overlap / shorter >= 0.85
 
 
 def fetch_author_profile():
@@ -87,34 +98,115 @@ def main():
     cited_by = profile.get("cited_by", {})
     table = cited_by.get("table", [])
     for row in table:
-        if row.get("citations", {}).get("all"):
-            total_citations = int(row["citations"]["all"])
-        if row.get("hindex", {}).get("all"):
-            h_index = int(row["hindex"]["all"])
+        # Try multiple key formats
+        for cite_key in ["citations", "cited_by"]:
+            val = row.get(cite_key, {})
+            if isinstance(val, dict) and val.get("all"):
+                total_citations = int(val["all"])
+                break
+        for h_key in ["hindex", "h_index", "h-index"]:
+            val = row.get(h_key, {})
+            if isinstance(val, dict) and val.get("all"):
+                h_index = int(val["all"])
+                break
+        # Direct numeric values
+        if "citations" in row and isinstance(row["citations"], int):
+            total_citations = int(row["citations"])
+        if "hindex" in row and isinstance(row["hindex"], int):
+            h_index = int(row["hindex"])
+
+    # Fallback: check cited_by directly
+    if not total_citations:
+        total_citations = int(cited_by.get("total", 0)) if cited_by.get("total") else 0
+    if not h_index:
+        h_index = int(profile.get("h_index", 0)) if profile.get("h_index") else 0
 
     print(f"Total citations: {total_citations}")
     print(f"h-index: {h_index}")
+    print(f"Debug - cited_by keys: {list(cited_by.keys())}")
+    print(f"Debug - table rows: {len(table)}")
+    for i, row in enumerate(table):
+        print(f"  Row {i}: {row}")
 
     print("Fetching papers...")
     papers_data = fetch_papers()
     articles = papers_data.get("articles", [])
 
-    paper_citations = {}
-    first_author_total = 0
-
+    # Build GS title -> citations map
+    gs_map = {}
     for article in articles:
         gs_title = article.get("title", "")
         gs_cite = article.get("cited_by", {}).get("value", 0)
         gs_authors = article.get("authors", "")
+        gs_map[gs_title] = {
+            "cite": int(gs_cite) if gs_cite else 0,
+            "authors": gs_authors,
+        }
 
-        for hp_title in PAPER_TITLES:
-            if title_match(gs_title, hp_title):
-                cite = int(gs_cite) if gs_cite else 0
-                paper_citations[hp_title] = cite
-                first_author_field = gs_authors.split(",")[0].strip().lower() if gs_authors else ""
+    paper_citations = {}
+    first_author_total = 0
+    used_gs_titles = set()
+
+    # First pass: exact (normalized) matches
+    for hp_title in PAPER_TITLES:
+        hp_norm = " ".join(normalize(hp_title))
+        for gs_title, info in gs_map.items():
+            if gs_title in used_gs_titles:
+                continue
+            gs_norm = " ".join(normalize(gs_title))
+            if gs_norm == hp_norm:
+                paper_citations[hp_title] = info["cite"]
+                used_gs_titles.add(gs_title)
+                first_author_field = info["authors"].split(",")[0].strip().lower() if info["authors"] else ""
                 if "j wu" in first_author_field or "junchao wu" in first_author_field or "wu j" in first_author_field:
-                    first_author_total += cite
+                    first_author_total += info["cite"]
                 break
+
+    # Second pass: substring matches
+    for hp_title in PAPER_TITLES:
+        if hp_title in paper_citations:
+            continue
+        hp_norm = " ".join(normalize(hp_title))
+        best_match = None
+        for gs_title, info in gs_map.items():
+            if gs_title in used_gs_titles:
+                continue
+            gs_norm = " ".join(normalize(gs_title))
+            if hp_norm in gs_norm or gs_norm in hp_norm:
+                best_match = gs_title
+                break
+        if best_match:
+            info = gs_map[best_match]
+            paper_citations[hp_title] = info["cite"]
+            used_gs_titles.add(best_match)
+            first_author_field = info["authors"].split(",")[0].strip().lower() if info["authors"] else ""
+            if "j wu" in first_author_field or "junchao wu" in first_author_field or "wu j" in first_author_field:
+                first_author_total += info["cite"]
+
+    # Third pass: high-overlap fuzzy matches
+    for hp_title in PAPER_TITLES:
+        if hp_title in paper_citations:
+            continue
+        hp_words = set(normalize(hp_title))
+        best_match = None
+        best_score = 0
+        for gs_title, info in gs_map.items():
+            if gs_title in used_gs_titles:
+                continue
+            gs_words = set(normalize(gs_title))
+            overlap = len(hp_words & gs_words)
+            shorter = min(len(hp_words), len(gs_words))
+            score = overlap / shorter if shorter > 0 else 0
+            if score > best_score and score >= 0.85:
+                best_score = score
+                best_match = gs_title
+        if best_match:
+            info = gs_map[best_match]
+            paper_citations[hp_title] = info["cite"]
+            used_gs_titles.add(best_match)
+            first_author_field = info["authors"].split(",")[0].strip().lower() if info["authors"] else ""
+            if "j wu" in first_author_field or "junchao wu" in first_author_field or "wu j" in first_author_field:
+                first_author_total += info["cite"]
 
     for title in PAPER_TITLES:
         if title not in paper_citations:
@@ -133,6 +225,8 @@ def main():
 
     print(f"Updated data/citations.json with {len(paper_citations)} papers")
     print(f"First-author citations: {first_author_total}")
+    for title, cite in sorted(paper_citations.items(), key=lambda x: -x[1]):
+        print(f"  {cite:4d} | {title}")
 
 
 if __name__ == "__main__":
