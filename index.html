@@ -1628,9 +1628,9 @@ var catMap = {
   });
 }
 
-function loadCitationStats() {
-  var data = {
-totalCitations: 1042,
+async function loadCitationStats() {
+  var fallback = {
+    totalCitations: 1042,
     hIndex: 10,
     firstAuthorCitations: 808,
     papers: {
@@ -1656,6 +1656,17 @@ totalCitations: 1042,
       "The Canton Canon Digital Library Based on Knowledge Graph": 4
     }
   };
+
+  var data = fallback;
+  try {
+    var resp = await fetch("data/citations.json?t=" + Date.now());
+    if (resp.ok) {
+      var fetched = await resp.json();
+      if (fetched.totalCitations !== undefined) data = fetched;
+    }
+  } catch(e) {
+    console.warn("Using fallback citation data");
+  }
 
   document.getElementById("stat-total").textContent = data.totalCitations;
   document.getElementById("stat-hindex").textContent = data.hIndex;
