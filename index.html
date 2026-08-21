@@ -816,12 +816,12 @@
         <strong>LLM-Generated Text Detection &amp; Benchmarking</strong>: To address the opacity of AI-generated content,
         I released a systematic survey <a href="https://arxiv.org/pdf/2310.14724.pdf" target="_blank">[CL'25]</a> that highlights the field's key challenges and future directions.
         I then developed detection frameworks leveraging grammatical <a href="https://arxiv.org/pdf/2405.04286" target="_blank">[COLING'25]</a> and representation pattern <a href="https://arxiv.org/abs/2508.13152" target="_blank">[TACL'25]</a> differences,
-        constructed leading benchmarks tailored to multilingual and real-world scenarios <a href="https://openreview.net/forum?id=ZGMkOikEyv" target="_blank">[NeurIPS'24]</a>; <a href="https://arxiv.org/abs/2605.15518" target="_blank">[ACL'26]</a> and
-        specialized domains (e.g., modern Chinese poetry <a href="https://arxiv.org/abs/2509.01620" target="_blank">[EMNLP'25]</a>), and organized the shared task on this topic <a href="https://link.springer.com/chapter/10.1007/978-981-95-3352-7_21" target="_blank">[NLPCC'25]</a>; <a href="#">[NLPCC'26]</a>.
+        constructed leading benchmarks tailored to multilingual and real-world scenarios <a href="https://openreview.net/forum?id=ZGMkOikEyv" target="_blank">[NeurIPS'24]</a>; <a href="https://arxiv.org/abs/2605.15518" target="_blank">[ACL'26]</a>, including cross-lingual detection across Indic languages <a href="#">[EMNLP'26]</a>, and
+        specialized domains (e.g., modern Chinese poetry <a href="https://arxiv.org/abs/2509.01620" target="_blank">[EMNLP'25]</a>; <a href="#">[EMNLP'26]</a>), and organized the shared task on this topic <a href="https://link.springer.com/chapter/10.1007/978-981-95-3352-7_21" target="_blank">[NLPCC'25]</a>; <a href="#">[NLPCC'26]</a>.
       </li>
       <li>
         <strong>Efficient and Controllable LLM Tuning &amp; Reasoning</strong>: Focusing on efficient, controllable, and explainable LLM post-training and reasoning,
-        I proposed a neuron-aware instruction tuning framework <a href="https://openreview.net/forum?id=uq6UWRgzMr" target="_blank">[ICLR'26]</a>. Collaboratively, I investigated internal reasoning mechanisms of LLMs,
+        I proposed a neuron-aware instruction tuning framework <a href="https://openreview.net/forum?id=uq6UWRgzMr" target="_blank">[ICLR'26]</a>, and extended this line with neuron-guided fine-tuning for efficient alignment <a href="#">[EMNLP'26]</a>. Collaboratively, I investigated internal reasoning mechanisms of LLMs,
         including &quot;aha moments&quot; in complex problem-solving <a href="https://arxiv.org/abs/2504.02956" target="_blank">[TACL'26]</a> and COT monitorability in LRMs <a href="https://arxiv.org/abs/2506.19492" target="_blank">[arXiv'25]</a>,
         to enhance model trustworthiness.
       </li>
@@ -831,13 +831,15 @@
       </li>
       <li>
         <strong>Machine Translation and Multilingual</strong>: I engage in research on domain-adaptive machine translation <a href="#">[TALLIP'26]</a>
-        and the exploration of LLMs as evaluators <a href="https://openreview.net/forum?id=D3V0XAq6Bm" target="_blank">[ICML2025@AIW 2025]</a>; <a href="#">[ICML'26]</a>, as well as human-in-the-loop MT systems <a href="https://arxiv.org/pdf/2310.08908v1.pdf" target="_blank">[MT Summit'23]</a>.
+        and the exploration of LLMs as evaluators <a href="https://openreview.net/forum?id=D3V0XAq6Bm" target="_blank">[ICML2025@AIW 2025]</a>; <a href="#">[ICML'26]</a>; <a href="#">[NLPCC'26]</a>, as well as human-in-the-loop MT systems <a href="https://arxiv.org/pdf/2310.08908v1.pdf" target="_blank">[MT Summit'23]</a>.
       </li>
     </ul>
 
     <!-- ── News ── -->
     <h2 class="section-title" id="news">News</h2>
     <ul class="modern-list">
+      <li><span class="modern-list-date">2026-08-21</span><span class="modern-list-content">Four papers accepted by <strong>EMNLP 2026 Findings</strong>: <em>Neuron-Guided Fine-Tuning</em> (Co-first author), <em>IndicDetect</em>, <em>Seeing the Poem</em>, and <em>Before the Arrest</em> (Co-author).</span></li>
+      <li><span class="modern-list-date">2026-08-04</span><span class="modern-list-content">One Main and Three Shared Task papers accepted by <strong>NLPCC 2026</strong>.</span></li>
       <li><span class="modern-list-date">2026-05-01</span><span class="modern-list-content">One paper accepted by <strong>ICML 2026</strong> as Co-author: <em>UniRRM</em>.</span></li>
       <li><span class="modern-list-date">2026-04-07</span><span class="modern-list-content">Two papers accepted by <strong>ACL 2026 Main</strong>: <em>DetectRL-X</em> (First-author) and <em>Political Stance Mitigation</em> (Co-author).</span></li>
       <li><span class="modern-list-date">2026-03-14</span><span class="modern-list-content">One paper accepted by <strong>CVPR 2026 Findings</strong> as Co-author: <em>LongDocSpan</em>.</span></li>
@@ -903,6 +905,158 @@
           <div class="paper-links">
             <a href="https://openreview.net/forum?id=uq6UWRgzMr" target="_blank" class="paper-btn paper-btn-primary">Paper</a>
             <a href="#" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- EMNLP 2026 Neuron-Guided Fine-Tuning (Co-First) -->
+      <article class="paper-card" data-selected="true" data-year="2026" data-author-rank="2">
+        <div class="paper-image-container">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect fill='%23ede9fe' width='200' height='120'/%3E%3Ctext x='100' y='66' text-anchor='middle' fill='%235b21b6' font-size='13' font-weight='bold' font-family='serif'%3EEMNLP 2026%3C/text%3E%3C/svg%3E" alt="Neuron-Guided Fine-Tuning">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">Neuron-Guided Fine-Tuning: Unlocking Efficient Alignment Mechanisms for Large Language Models</div>
+          <div class="paper-authors">Zeyu Wu*, <strong>Junchao Wu</strong>* (Co-First), Shudong Liu, Runzhe Zhan, Xin Chen, Shu Yang, Yichao Du, Longyue Wang, Weihua Luo, Jinsong Su, Derek F. Wong†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">EMNLP Findings 2026</span>
+            <span class="ccf-badge">CCF-B</span>
+          </div>
+          <div class="paper-links">
+            <a href="#" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="#" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- EMNLP 2026 IndicDetect -->
+      <article class="paper-card" data-selected="false" data-year="2026" data-author-rank="2">
+        <div class="paper-image-container">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect fill='%23f5f3ff' width='200' height='120'/%3E%3Ctext x='100' y='66' text-anchor='middle' fill='%236d28d9' font-size='13' font-weight='bold' font-family='serif'%3EEMNLP 2026%3C/text%3E%3C/svg%3E" alt="IndicDetect">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">IndicDetect: Evaluating Cross-Lingual LLM-Generated Text Detection for Hindi, Telugu, and Tamil</div>
+          <div class="paper-authors">Bhaskar Ganesh Devalla, <strong>Junchao Wu</strong>, Nilesh Dokuparthi, Greeshma Yaluru, Tatiana Muniz Rodriguez, Lidia S. Chao, Derek F. Wong†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">EMNLP Findings 2026</span>
+            <span class="ccf-badge">CCF-B</span>
+          </div>
+          <div class="paper-links">
+            <a href="#" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="#" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- EMNLP 2026 Seeing the Poem -->
+      <article class="paper-card" data-selected="false" data-year="2026" data-author-rank="5">
+        <div class="paper-image-container">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect fill='%23f3e8ff' width='200' height='120'/%3E%3Ctext x='100' y='66' text-anchor='middle' fill='%237c3aed' font-size='13' font-weight='bold' font-family='serif'%3EEMNLP 2026%3C/text%3E%3C/svg%3E" alt="Seeing the Poem">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">Seeing the Poem: Image-Semantic Detection of AI-Generated Modern Chinese Poetry with MLLMs</div>
+          <div class="paper-authors">Shanshan Wang, Fengying Ye, Hanjia Lyu, Caiwen Gou, <strong>Junchao Wu</strong>, Jingming Yao, Cheng-zhong Xu, Jiebo Luo, Derek F. Wong†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">EMNLP Findings 2026</span>
+            <span class="ccf-badge">CCF-B</span>
+          </div>
+          <div class="paper-links">
+            <a href="#" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="#" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- EMNLP 2026 Before the Arrest -->
+      <article class="paper-card" data-selected="false" data-year="2026" data-author-rank="5">
+        <div class="paper-image-container">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect fill='%23ddd6fe' width='200' height='120'/%3E%3Ctext x='100' y='66' text-anchor='middle' fill='%235b21b6' font-size='13' font-weight='bold' font-family='serif'%3EEMNLP 2026%3C/text%3E%3C/svg%3E" alt="Before the Arrest">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">Before the Arrest: Benchmarking LLMs on Criminal Profiling from Incomplete Evidence</div>
+          <div class="paper-authors">Yutong Yao, Cao Yanjie, Guanhua Chen, Yang Xu, <strong>Junchao Wu</strong>, Zeyu Wu, Lidia S. Chao, Derek F. Wong†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">EMNLP Findings 2026</span>
+            <span class="ccf-badge">CCF-B</span>
+          </div>
+          <div class="paper-links">
+            <a href="#" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="#" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- NLPCC 2026 Shared Task 6 (First-author) -->
+      <article class="paper-card" data-selected="false" data-year="2026" data-author-rank="1">
+        <div class="paper-image-container">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect fill='%23ddd6fe' width='200' height='120'/%3E%3Ctext x='100' y='66' text-anchor='middle' fill='%235b21b6' font-size='14' font-weight='bold' font-family='serif'%3ENLPCC 2026%3C/text%3E%3C/svg%3E" alt="NLPCC 2026 Task 6">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">Overview of NLPCC 2026 Shared Task 6: Ternary Chinese LLM-Generated Text Detection in the Era of Human-Machine Collaboration</div>
+          <div class="paper-authors"><strong>Junchao Wu</strong>, Zeyu Wu, Runzhe Zhan, Zhiwen Xie, Yulin Yuan, Yichao Du, Longyue Wang, Zhao Xu, Weihua Luo, Derek F. Wong†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">NLPCC 2026</span>
+            <span class="ccf-badge">CCF-C</span>
+          </div>
+          <div class="paper-links">
+            <a href="#" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="https://nlp2ct.github.io/NLPCC-2026-Task6-Detection/" target="_blank" class="paper-btn paper-btn-secondary">Website</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- NLPCC 2026 Why Do Metrics Think That -->
+      <article class="paper-card" data-selected="false" data-year="2026" data-author-rank="3">
+        <div class="paper-image-container">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect fill='%23ede9fe' width='200' height='120'/%3E%3Ctext x='100' y='66' text-anchor='middle' fill='%235b21b6' font-size='14' font-weight='bold' font-family='serif'%3ENLPCC 2026%3C/text%3E%3C/svg%3E" alt="Why Do Metrics Think That">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">Why Do Metrics Think That? Diagnosing Error Overestimation in LLM-based Machine Translation Evaluation</div>
+          <div class="paper-authors">Runzhe Zhan, Xinyi Yang, <strong>Junchao Wu</strong>, Lidia S. Chao, Derek F. Wong†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">NLPCC 2026</span>
+            <span class="ccf-badge">CCF-C</span>
+          </div>
+          <div class="paper-links">
+            <a href="#" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="#" class="paper-btn paper-btn-secondary">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- NLPCC 2026 Shared Task 8 -->
+      <article class="paper-card" data-selected="false" data-year="2026" data-author-rank="4">
+        <div class="paper-image-container">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect fill='%23f5f3ff' width='200' height='120'/%3E%3Ctext x='100' y='66' text-anchor='middle' fill='%236d28d9' font-size='14' font-weight='bold' font-family='serif'%3ENLPCC 2026%3C/text%3E%3C/svg%3E" alt="NLPCC 2026 Task 8">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">Overview of the NLPCC 2026 Shared Task 8: Factivity Inference Inconsistency Attack</div>
+          <div class="paper-authors">Daohuan Liu, Jiaoyang Su, Guanliang Cong, <strong>Junchao Wu</strong>, Yuer Wang, Yulin Yuan, Bin Li, Xuri Tang†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">NLPCC 2026</span>
+            <span class="ccf-badge">CCF-C</span>
+          </div>
+          <div class="paper-links">
+            <a href="#" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="https://github.com/Throde/NLPCC2026-Task8-FIIA" target="_blank" class="paper-btn paper-btn-secondary">Website</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- NLPCC 2026 Shared Task 10 -->
+      <article class="paper-card" data-selected="false" data-year="2026" data-author-rank="3">
+        <div class="paper-image-container">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect fill='%23f3e8ff' width='200' height='120'/%3E%3Ctext x='100' y='66' text-anchor='middle' fill='%237c3aed' font-size='14' font-weight='bold' font-family='serif'%3ENLPCC 2026%3C/text%3E%3C/svg%3E" alt="NLPCC 2026 Task 10">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">Overview of the NLPCC 2026 Shared Task 10: Reliability of AI-Assisted Scientific Reporting</div>
+          <div class="paper-authors">Runzhe Zhan, Yutong Yao, <strong>Junchao Wu</strong>, Jingkun Ma, Yanming Sun, Fengying Ye, Lidia S. Chao, Derek F. Wong†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">NLPCC 2026</span>
+            <span class="ccf-badge">CCF-C</span>
+          </div>
+          <div class="paper-links">
+            <a href="#" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="https://nlp2ct.github.io/NLPCC-2026-Task10-Science/" target="_blank" class="paper-btn paper-btn-secondary">Website</a>
           </div>
         </div>
       </article>
@@ -1514,12 +1668,20 @@ var catMap = {
     "A Survey on LLM-Generated Text Detection: Necessity, Methods, and Future Directions": "detection",
     "UniRRM: Unified Reasoning Reward Models Across Languages and Evaluation Paradigms": "mt",
     "Understanding and Mitigating Political Stance Cross-topic Generalization in Large Language Models": "explainability",
+    "Neuron-Guided Fine-Tuning: Unlocking Efficient Alignment Mechanisms for Large Language Models": "tuning",
+    "IndicDetect: Evaluating Cross-Lingual LLM-Generated Text Detection for Hindi, Telugu, and Tamil": "detection",
+    "Seeing the Poem: Image-Semantic Detection of AI-Generated Modern Chinese Poetry with MLLMs": "detection",
+    "Before the Arrest: Benchmarking LLMs on Criminal Profiling from Incomplete Evidence": "other",
     "LongDocSpan: Extending LVLMs for Long Document Understanding": "other",
     "Domain Adaptive Machine Translation with Synthetic Feedback for Large Language Models": "mt",
     "Who Wrote This? The Key to Zero-Shot LLM-Generated Text Detection Is GECScore": "detection",
     "Benchmarking the Detection of LLMs-Generated Modern Chinese Poetry": "detection",
     "Is Long-to-Short a Free Lunch? Investigating Inconsistency and Reasoning Efficiency in LRMs": "tuning",
     "Why Do Metrics Think That? Towards Understanding Large Language Models as Machine Translation Evaluators": "mt",
+    "Why Do Metrics Think That? Diagnosing Error Overestimation in LLM-based Machine Translation Evaluation": "mt",
+    "Overview of NLPCC 2026 Shared Task 6: Ternary Chinese LLM-Generated Text Detection in the Era of Human-Machine Collaboration": "detection",
+    "Overview of the NLPCC 2026 Shared Task 8: Factivity Inference Inconsistency Attack": "detection",
+    "Overview of the NLPCC 2026 Shared Task 10: Reliability of AI-Assisted Scientific Reporting": "other",
     "Overview of CCL25-Eval Task 4: Factivity Inference Evaluation 2025": "detection",
     "Overview of the NLPCC 2025 Shared Task 1: LLM-Generated Text Detection": "detection",
     "Understanding Aha Moments: From External Observations to Internal Mechanisms": "tuning",
@@ -1665,7 +1827,15 @@ async function loadCitationStats() {
       "Rethinking Prompt-based Debiasing in Large Language Models": 15,
       "Fraud-R1: A Multi-Round Benchmark for Assessing the Robustness of LLM Against Augmented Fraud and Phishing Inducements": 43,
       "Human-in-the-loop Machine Translation with Large Language Model": 47,
-      "The Canton Canon Digital Library Based on Knowledge Graph": 4
+      "The Canton Canon Digital Library Based on Knowledge Graph": 4,
+      "Neuron-Guided Fine-Tuning: Unlocking Efficient Alignment Mechanisms for Large Language Models": 0,
+      "IndicDetect: Evaluating Cross-Lingual LLM-Generated Text Detection for Hindi, Telugu, and Tamil": 0,
+      "Seeing the Poem: Image-Semantic Detection of AI-Generated Modern Chinese Poetry with MLLMs": 0,
+      "Before the Arrest: Benchmarking LLMs on Criminal Profiling from Incomplete Evidence": 0,
+      "Overview of NLPCC 2026 Shared Task 6: Ternary Chinese LLM-Generated Text Detection in the Era of Human-Machine Collaboration": 0,
+      "Why Do Metrics Think That? Diagnosing Error Overestimation in LLM-based Machine Translation Evaluation": 0,
+      "Overview of the NLPCC 2026 Shared Task 8: Factivity Inference Inconsistency Attack": 0,
+      "Overview of the NLPCC 2026 Shared Task 10: Reliability of AI-Assisted Scientific Reporting": 0
     }
   };
 
