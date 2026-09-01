@@ -31,6 +31,14 @@ PAPER_TITLES = [
     "Fraud-R1: A Multi-Round Benchmark for Assessing the Robustness of LLM Against Augmented Fraud and Phishing Inducements",
     "Human-in-the-loop Machine Translation with Large Language Model",
     "The Canton Canon Digital Library Based on Knowledge Graph",
+    "Neuron-Guided Fine-Tuning: Unlocking Efficient Alignment Mechanisms for Large Language Models",
+    "IndicDetect: Evaluating Cross-Lingual LLM-Generated Text Detection for Hindi, Telugu, and Tamil",
+    "Seeing the Poem: Image-Semantic Detection of AI-Generated Modern Chinese Poetry with MLLMs",
+    "Before the Arrest: Benchmarking LLMs on Criminal Profiling from Incomplete Evidence",
+    "Overview of NLPCC 2026 Shared Task 6: Ternary Chinese LLM-Generated Text Detection in the Era of Human-Machine Collaboration",
+    "Why Do Metrics Think That? Diagnosing Error Overestimation in LLM-based Machine Translation Evaluation",
+    "Overview of the NLPCC 2026 Shared Task 8: Factivity Inference Inconsistency Attack",
+    "Overview of the NLPCC 2026 Shared Task 10: Reliability of AI-Assisted Scientific Reporting",
 ]
 
 
