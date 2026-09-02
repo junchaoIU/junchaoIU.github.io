@@ -19,9 +19,17 @@
     "Rethinking Prompt-based Debiasing in Large Language Models": 18,
     "Fraud-R1: A Multi-Round Benchmark for Assessing the Robustness of LLM Against Augmented Fraud and Phishing Inducements": 48,
     "Human-in-the-loop Machine Translation with Large Language Model": 46,
+    "Seeing the Poem: Image-Semantic Detection of AI-Generated Modern Chinese Poetry with MLLMs": 1,
     "The Canton Canon Digital Library Based on Knowledge Graph": 5,
     "UniRRM: Unified Reasoning Reward Models Across Languages and Evaluation Paradigms": 0,
     "LongDocSpan: Extending LVLMs for Long Document Understanding": 0,
-    "Why Do Metrics Think That? Towards Understanding Large Language Models as Machine Translation Evaluators": 0
+    "Why Do Metrics Think That? Towards Understanding Large Language Models as Machine Translation Evaluators": 0,
+    "Neuron-Guided Fine-Tuning: Unlocking Efficient Alignment Mechanisms for Large Language Models": 0,
+    "IndicDetect: Evaluating Cross-Lingual LLM-Generated Text Detection for Hindi, Telugu, and Tamil": 0,
+    "Before the Arrest: Benchmarking LLMs on Criminal Profiling from Incomplete Evidence": 0,
+    "Overview of NLPCC 2026 Shared Task 6: Ternary Chinese LLM-Generated Text Detection in the Era of Human-Machine Collaboration": 0,
+    "Why Do Metrics Think That? Diagnosing Error Overestimation in LLM-based Machine Translation Evaluation": 0,
+    "Overview of the NLPCC 2026 Shared Task 8: Factivity Inference Inconsistency Attack": 0,
+    "Overview of the NLPCC 2026 Shared Task 10: Reliability of AI-Assisted Scientific Reporting": 0
   }
 }
