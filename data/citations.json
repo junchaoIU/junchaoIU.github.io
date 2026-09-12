@@ -1,13 +1,13 @@
 {
-  "totalCitations": 1135,
+  "totalCitations": 1136,
   "hIndex": 10,
-  "firstAuthorCitations": 851,
+  "firstAuthorCitations": 852,
   "papers": {
     "Neuron-Aware Data Selection in Instruction Tuning for Large Language Models": 7,
     "DetectRL-X: Towards Reliable Multilingual and Real-World LLM-Generated Text Detection": 1,
     "RepreGuard: Detecting LLM-Generated Text by Revealing Hidden Representation Patterns": 22,
     "DetectRL: Benchmarking LLM-Generated Text Detection in Real-World Scenarios": 124,
-    "A Survey on LLM-Generated Text Detection: Necessity, Methods, and Future Directions": 667,
+    "A Survey on LLM-Generated Text Detection: Necessity, Methods, and Future Directions": 668,
     "Understanding and Mitigating Political Stance Cross-topic Generalization in Large Language Models": 10,
     "Domain Adaptive Machine Translation with Synthetic Feedback for Large Language Models": 1,
     "Who Wrote This? The Key to Zero-Shot LLM-Generated Text Detection Is GECScore": 49,
