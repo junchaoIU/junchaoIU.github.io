@@ -1,5 +1,5 @@
 {
-  "totalCitations": 1222,
+  "totalCitations": 1224,
   "hIndex": 11,
   "firstAuthorCitations": 921,
   "papers": {
@@ -17,7 +17,7 @@
     "Overview of the NLPCC 2025 Shared Task 1: LLM-Generated Text Detection": 5,
     "Understanding Aha Moments: From External Observations to Internal Mechanisms": 48,
     "Rethinking Prompt-based Debiasing in Large Language Models": 19,
-    "Fraud-R1: A Multi-Round Benchmark for Assessing the Robustness of LLM Against Augmented Fraud and Phishing Inducements": 50,
+    "Fraud-R1: A Multi-Round Benchmark for Assessing the Robustness of LLM Against Augmented Fraud and Phishing Inducements": 51,
     "Human-in-the-loop Machine Translation with Large Language Model": 48,
     "Neuron-Guided Fine-Tuning: Unlocking Efficient Alignment Mechanisms for Large Language Models": 0,
     "Seeing the Poem: Image-Semantic Detection of AI-Generated Modern Chinese Poetry with MLLMs": 1,
