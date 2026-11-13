@@ -40,6 +40,7 @@ PAPER_TITLES = [
     "Overview of the NLPCC 2026 Shared Task 8: Factivity Inference Inconsistency Attack",
     "Overview of the NLPCC 2026 Shared Task 10: Reliability of AI-Assisted Scientific Reporting",
     "Can Large Language Models Identify Implicit Suicidal Ideation? An Empirical Evaluation",
+    "ReconPotBench: Evaluating LLM Honeypots in Multi-Round Linux Reconnaissance",
 ]
 
 

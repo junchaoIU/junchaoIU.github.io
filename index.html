@@ -826,8 +826,8 @@
         to enhance model trustworthiness.
       </li>
       <li>
-        <strong>Interpretability &amp; Safety</strong>: I also work on LLM safety &amp; ethics <a href="https://arxiv.org/abs/2503.09219" target="_blank">[ACL'25]</a>; <a href="https://arxiv.org/abs/2502.12904" target="_blank">[EMNLP'25]</a>; <a href="https://aclanthology.org/2025.findings-emnlp.998/" target="_blank">[EMNLP'25]</a>; <a href="#">[ACL'26]</a>,
-        covering debiasing optimization, resistance to fraud/phishing inducements, implicit suicidal ideation identification, and political stance mitigation.
+        <strong>Interpretability &amp; Safety</strong>: I also work on LLM safety &amp; ethics <a href="https://arxiv.org/abs/2503.09219" target="_blank">[ACL'25]</a>; <a href="https://arxiv.org/abs/2502.12904" target="_blank">[EMNLP'25]</a>; <a href="https://aclanthology.org/2025.findings-emnlp.998/" target="_blank">[EMNLP'25]</a>; <a href="#">[ACL'26]</a>; <a href="#">[EACL'27]</a>,
+        covering debiasing optimization, resistance to fraud/phishing inducements, implicit suicidal ideation identification, political stance mitigation, and LLM honeypots against multi-round reconnaissance.
       </li>
       <li>
         <strong>Machine Translation and Multilingual</strong>: I engage in research on domain-adaptive machine translation <a href="#">[TALLIP'26]</a>
@@ -838,7 +838,8 @@
     <!-- ── News ── -->
     <h2 class="section-title" id="news">News</h2>
     <ul class="modern-list">
-      <li><span class="modern-list-date">2026-10-26</span><span class="modern-list-content">Our workshop <a href="https://nlp2ct.github.io/COLING-2027-Workshop-AIGCTrustDetect" target="_blank"><em>AIGCTrustDetect</em></a> will be held at <strong>COLING 2027</strong>. Welcome to submit your work!</span></li>
+      <li><span class="modern-list-date">2026-11-13</span><span class="modern-list-content">One paper accepted by <strong>EACL</strong>: <em>ReconPotBench</em>.</span></li>
+      <li><span class="modern-list-date">2026-10-26</span><span class="modern-list-content">Our workshop <em>AIGCTrustDetect</em> has been accepted and will be held at <strong>COLING 2027</strong>. Welcome to submit your relevant work or participate in our shared task — see <a href="https://nlp2ct.github.io/COLING-2027-Workshop-AIGCTrustDetect" target="_blank">details</a>.</span></li>
       <li><span class="modern-list-date">2026-08-29</span><span class="modern-list-content">One paper accepted by <strong>TACL</strong>: <em>Understanding Aha Moments</em>.</span></li>
       <li><span class="modern-list-date">2026-08-21</span><span class="modern-list-content">Four papers accepted by <strong>EMNLP 2026 Findings</strong>: <em>Neuron-Guided Fine-Tuning</em> (Co-first author), <em>IndicDetect</em>, <em>Seeing the Poem</em>, and <em>Before the Arrest</em> (Co-author).</span></li>
       <li><span class="modern-list-date">2026-08-04</span><span class="modern-list-content">One Main and Three Shared Task papers accepted by <strong>NLPCC 2026</strong>.</span></li>
@@ -1059,6 +1060,24 @@
           <div class="paper-links">
             <a href="#" class="paper-btn paper-btn-primary">Paper</a>
             <a href="https://nlp2ct.github.io/NLPCC-2026-Task10-Science/" target="_blank" class="paper-btn paper-btn-secondary">Website</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- EACL 2027 ReconPotBench -->
+      <article class="paper-card" data-selected="false" data-year="2027" data-author-rank="2">
+        <div class="paper-image-container">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect fill='%23ede9fe' width='200' height='120'/%3E%3Ctext x='100' y='66' text-anchor='middle' fill='%235b21b6' font-size='14' font-weight='bold' font-family='serif'%3EEACL 2027%3C/text%3E%3C/svg%3E" alt="ReconPotBench">
+        </div>
+        <div class="paper-content">
+          <div class="paper-title">ReconPotBench: Evaluating LLM Honeypots in Multi-Round Linux Reconnaissance</div>
+          <div class="paper-authors">Qianli Wang, <strong>Junchao Wu</strong>, Binkai Ou, Lidia S. Chao, Derek F. Wong†</div>
+          <div class="paper-meta">
+            <span class="conf-badge">EACL 2027</span>
+          </div>
+          <div class="paper-links">
+            <a href="#" class="paper-btn paper-btn-primary">Paper</a>
+            <a href="#" class="paper-btn paper-btn-secondary">Code</a>
           </div>
         </div>
       </article>
@@ -1723,6 +1742,7 @@ var catMap = {
     "Rethinking Prompt-based Debiasing in Large Language Models": "explainability",
     "Fraud-R1: A Multi-Round Benchmark for Assessing the Robustness of LLM Against Augmented Fraud and Phishing Inducements": "explainability",
     "Can Large Language Models Identify Implicit Suicidal Ideation? An Empirical Evaluation": "explainability",
+    "ReconPotBench: Evaluating LLM Honeypots in Multi-Round Linux Reconnaissance": "explainability",
     "Human-in-the-loop Machine Translation with Large Language Model": "mt",
     "The Canton Canon Digital Library Based on Knowledge Graph": "other"
   };
@@ -1862,7 +1882,8 @@ async function loadCitationStats() {
       "Understanding Aha Moments: From External Observations to Internal Mechanisms": 46,
       "Rethinking Prompt-based Debiasing in Large Language Models": 15,
       "Fraud-R1: A Multi-Round Benchmark for Assessing the Robustness of LLM Against Augmented Fraud and Phishing Inducements": 43,
-      "Can Large Language Models Identify Implicit Suicidal Ideation? An Empirical Evaluation": 0,
+      "Can Large Language Models Identify Implicit Suicidal Ideation? An Empirical Evaluation": 20,
+      "ReconPotBench: Evaluating LLM Honeypots in Multi-Round Linux Reconnaissance": 0,
       "Human-in-the-loop Machine Translation with Large Language Model": 47,
       "The Canton Canon Digital Library Based on Knowledge Graph": 4,
       "Neuron-Guided Fine-Tuning: Unlocking Efficient Alignment Mechanisms for Large Language Models": 0,
