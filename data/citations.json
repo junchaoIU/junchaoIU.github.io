@@ -1,5 +1,5 @@
 {
-  "totalCitations": 1311,
+  "totalCitations": 1310,
   "hIndex": 12,
   "firstAuthorCitations": 978,
   "papers": {
@@ -18,7 +18,7 @@
     "Understanding Aha Moments: From External Observations to Internal Mechanisms": 52,
     "Rethinking Prompt-based Debiasing in Large Language Models": 22,
     "Fraud-R1: A Multi-Round Benchmark for Assessing the Robustness of LLM Against Augmented Fraud and Phishing Inducements": 55,
-    "Human-in-the-loop Machine Translation with Large Language Model": 52,
+    "Human-in-the-loop Machine Translation with Large Language Model": 51,
     "Neuron-Guided Fine-Tuning: Unlocking Efficient Alignment Mechanisms for Large Language Models": 0,
     "Seeing the Poem: Image-Semantic Detection of AI-Generated Modern Chinese Poetry with MLLMs": 2,
     "Can Large Language Models Identify Implicit Suicidal Ideation? An Empirical Evaluation": 21,
